@@ -1,2 +1,1 @@
-# webprog_11bc_2023
-Webprogramozás - 11.
+# Webprogramozás 11. - Cs1
