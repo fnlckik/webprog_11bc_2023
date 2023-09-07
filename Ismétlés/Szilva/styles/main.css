@@ -1,0 +1,18 @@
+main h3 {
+    text-align: center;
+}
+
+main table {
+    text-align: center;
+}
+
+#galeria p{
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--feher);
+}
+
+#galeria img {
+    margin: 3% auto;
+    background-color: var(--feher);
+}
