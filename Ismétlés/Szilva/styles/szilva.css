@@ -1,0 +1,11 @@
+html {
+    --lila: blue;
+}
+
+main {
+    color: var(--lila);
+}
+
+header {
+    background-color: var(--lila);
+}
