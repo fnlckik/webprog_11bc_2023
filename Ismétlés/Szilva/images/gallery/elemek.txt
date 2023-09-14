@@ -1,0 +1,12 @@
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/black-amber.jpg" alt="black-amber" title="Black amber"><p class="rounded">Black amber</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/black-ruby.jpg" alt="black-ruby" title="Black ruby"><p class="rounded">Black ruby</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/black-splendor.jpg" alt="black-splendor" title="Black splendor"><p class="rounded">Black splendor</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/damson.jpg" alt="damson" title="Damson"><p class="rounded">Damson</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/elephant-heart.jpg" alt="elephant-heart" title="Elephant heart"><p class="rounded">Elephant heart</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/french-prune.jpg" alt="french-prune" title="French prune"><p class="rounded">French prune</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/friar.jpg" alt="friar" title="Friar"><p class="rounded">Friar</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/greengage.jpg" alt="greengage" title="Greengage"><p class="rounded">Greengage</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/italian-prune.jpg" alt="italian-prune" title="Italian prune"><p class="rounded">Italian prune</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/moyer.jpg" alt="moyer" title="Moyer"><p class="rounded">Moyer</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/myrobalan.jpg" alt="myrobalan" title="Myrobalan"><p class="rounded">Myrobalan</p></div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img class="img-thumbnail" src="images/gallery/satsuma.jpg" alt="satsuma" title="Satsuma"><p class="rounded">Satsuma</p></div>
