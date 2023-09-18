@@ -1,0 +1,18 @@
+html {
+    --lila: rgb(139, 41, 139);
+    --feher: rgba(255, 255, 255, 80%);
+}
+
+body {
+    padding: 2%;
+    background-color: #dda0dd;
+}
+
+hr {
+    opacity: 100%;
+}
+
+h1, h2, h3 {
+    font-family: fantasy;
+    margin: 20px 0px;
+}
