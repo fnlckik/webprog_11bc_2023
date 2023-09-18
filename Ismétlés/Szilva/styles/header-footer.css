@@ -1,3 +1,8 @@
 header {
     padding: 2%;
+    background-color: var(--lila);
+    color: var(--feher);
+    /* serif, sans-serif, monospace, cursive, fantasy */
+    font-family: Impact, sans-serif;
+    font-size: 6vw;
 }
