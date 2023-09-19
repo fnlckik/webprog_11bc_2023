@@ -1,12 +1,19 @@
 :root {
-    --lila: purple;
-
+    --lila: rgb(139, 41, 139);
+    --feher: rgba(255, 255, 255, 80%);
 }
 
-main {
-    color: var(--lila);
+body {
+    padding: 2%;
+    background-color: #dda0dd;
 }
 
-header {
-    background-color: var(--lila);
+hr {
+    opacity: 100%;
+}
+
+h1, h2, h3 {
+    /* serif, sans-serif, monospace, cursive, fantasy */
+    font-family: fantasy;
+    margin: 20px 0px;
 }
