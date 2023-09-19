@@ -1,0 +1,12 @@
+<!-- XML: Extensible Markup Language -->
+<?xml-stylesheet href="style.css"?>
+<Asztal anyag="fa" ertek="40000">
+    <Nev>Iroasztal</Nev>
+    <Fiok>
+        <Iroeszkoz>Toll</Iroeszkoz>
+        <Iroeszkoz>Ceruza</Iroeszkoz>
+    </Fiok>
+    <Fiok>
+        Fuzetek
+    </Fiok>
+</Asztal>
