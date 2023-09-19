@@ -1,3 +1,10 @@
 header {
     padding: 2%;
+    background-color: var(--lila);
+    color: var(--feher);
+    font-family: Impact, sans-serif;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    font-size: 6%; /* ??? */
 }
+
