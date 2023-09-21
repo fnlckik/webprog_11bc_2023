@@ -5,4 +5,43 @@ header {
     /* serif, sans-serif, monospace, cursive, fantasy */
     font-family: Impact, sans-serif;
     font-size: 6vw;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+}
+
+/* Ez mi ez? */
+/* Szemantikailag ez nem táblázat! */
+.col-3, .col-9 {
+    display: table;
+}
+
+header p {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer, footer div {
+    padding: 2%;
+    background-color: var(--lila);
+    color: var(--feher);
+    text-align: center;
+}
+
+#kapcsolat span {
+    font-weight: bold;
+    float: left;
+    width: calc(100% / 3);
+}
+
+#kapcsolat {
+    overflow: auto;
+}
+
+#kozosseg img {
+    height: 1em;
+}
+
+#kozosseg a {
+    color: var(--white);
 }
