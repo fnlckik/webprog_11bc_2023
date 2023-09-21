@@ -5,6 +5,37 @@ header {
     font-family: Impact, sans-serif;
     font-variant: small-caps;
     letter-spacing: 4px;
-    font-size: 6%; /* ??? */
+    font-size: 6vw;
+}
+
+/* Ez mi ez? */
+/* Gond: Ez nem táblázat szemantikailag! */
+header .col-3, header .col-9 {
+    display: table;
+}
+
+header p {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer, footer div {
+    padding: 2%;
+    background-color: var(--lila);
+    color: var(--feher);
+    text-align: center;
+}
+
+#kapcsolat span {
+    font-weight: bold;
+    /* float: left; */
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+}
+
+#kapcsolat {
+    overflow: auto;
 }
 
