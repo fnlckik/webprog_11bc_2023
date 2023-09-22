@@ -29,13 +29,63 @@ footer, footer div {
 
 #kapcsolat span {
     font-weight: bold;
-    /* float: left; */
-    width: 33%;
-    display: inline-block;
-    margin: auto;
+    float: left;
+    width: calc(100% / 3);
 }
 
 #kapcsolat {
     overflow: auto;
+}
+
+html {
+    font-size: 1em;
+}
+
+/* 
+    px,
+    %, vw, vh, em, rem 
+*/
+#kozosseg img {
+    height: 1em;
+    margin-right: .5em;
+}
+
+/* 
+    Inline: a, span
+    - Egy sorba
+    - Nem állítható width, height
+    - Nincs felső/alsó margin
+*/
+
+/* 
+    Block: p, h1-h6, hr, div, article, header
+    - Egymás alá (külön sorba)
+    - Van width, height
+    - Van felső/alsó margin
+*/
+#kozosseg p {
+    display: inline;
+}
+
+/* 
+    Inline-block: img
+    - Egy sorba
+    - Van width, height
+    - Van felső/alsó margin
+*/
+#kozosseg a {
+    background-color: var(--feher);
+    color: darkblue;
+    text-decoration: none;
+    margin: 12px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/* Pszeudo-osztályok */
+/* :active, :visited, :hover, :link */
+#kozosseg a:hover {
+    color: black;
+    background-color: lightgray;
 }
 
