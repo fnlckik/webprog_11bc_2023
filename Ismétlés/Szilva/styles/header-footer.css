@@ -40,8 +40,57 @@ footer, footer div {
 
 #kozosseg img {
     height: 1em;
+    margin-right: .5em;
 }
 
-#kozosseg a {
-    color: var(--white);
+/* Inline: a, span, strong, em */
+/* 
+- Egy sorban
+- Nincs width, height tulajdonság
+- Csak oldalsó margó van
+*/
+
+/* Block: p, div, article, section */
+/* 
+- Egymás alatt
+- Van width, height tulajdonság (alapból 100% width)
+- Van margó minden irányban
+*/
+#kozosseg p {
+    display: inline;
 }
+
+/* Inline-block: img */
+/* 
+- Egy sorban
+- Van width, height
+- Van margó minden irányban
+*/
+#kozosseg a {
+    background-color: var(--feher);
+    color: darkblue;
+    text-decoration: none;
+    margin: 12px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/* #kozosseg a:visited {
+    background-color: red;
+}
+
+#kozosseg a:active {
+    background-color: yellow !important;
+} */
+
+#kozosseg a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+/* Nem szép itt az ID használata! */
+#copyright {
+    font-style: italic;
+    margin-top: 25px;
+}
+
