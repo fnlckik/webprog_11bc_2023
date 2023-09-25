@@ -94,3 +94,51 @@ footer, footer div {
     margin-top: 25px;
 }
 
+/* Media query */
+/* css szabályok */
+/*
+@media (max-width: 600px) {
+    header {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    footer div, footer {
+        color: red !important;
+    }
+}
+
+@media print {
+    body {
+        background-color: yellow !important;
+        font-size: 1.5em;
+    }
+}
+*/
+
+/* screen, print, all */
+/* and, not */
+/* max-width, min-width  */
+
+@media (max-width: 675px) {
+    header {
+        letter-spacing: 0;
+    }
+
+    #kapcsolat span {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #kozosseg p {
+        display: none;
+    }
+
+    #kozosseg a {
+        display: block;
+        width: 75%;
+        margin: 1rem auto;
+        padding: 1rem 0;
+    }
+}
