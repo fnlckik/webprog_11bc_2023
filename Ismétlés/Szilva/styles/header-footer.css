@@ -89,3 +89,66 @@ html {
     background-color: lightgray;
 }
 
+/* közvetlen leszármazott = gyerek */
+/* footer>p {
+    color: red;
+} */
+
+#copyright {
+    font-style: italic;
+    margin-top: 25px;
+}
+
+/* Media query */
+/* min-width, max-width */
+/* @media (min-width: 600px) {
+    header {
+        background-color: blue;
+    }
+} */
+
+/* @media (width <= 600px) {
+    header {
+        color: red;
+    }
+} */
+
+/* landscape, portrait */
+/* @media (orientation: landscape) {
+    header {
+        background-color: black;
+    }
+} */
+
+/* all: screen, print, ... */
+/* @media print {
+    header {
+        background-color: brown;
+    }
+
+    body, header {
+        font-size: 2em;
+    }
+} */
+
+/* and, not */
+/* @media (min-width: 60px) and (max-width: 12000px) {
+    header {
+        color: red;
+    }
+} */
+
+@media screen and (max-width: 675px) {
+    header {
+        letter-spacing: 0;
+    }
+
+    #kapcsolat span {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #kozosseg p {
+        display: none;
+    }
+}
