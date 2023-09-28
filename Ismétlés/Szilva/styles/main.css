@@ -24,9 +24,73 @@ article {
     font-weight: bold;
 }
 
+/*
 #miert {
     background-image: url(../images/background.jpg);
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     opacity: 10%;
+}
+*/
+
+/* position: static, relative, absolute, fixed, sticky */
+/* 
+    absolute: relativ a legközelebbi pozicionált őshöz képest
+    sticky: relativ a legközelebbi gördíthető őshöz képest
+*/
+/* top, right, bottom, left */
+/*
+#miert_egyel {
+    background-color: yellow;
+    margin: 0;
+}
+
+#miert {
+    position: relative;
+    background-color: rgba(0, 0, 0, 40%);
+}
+*/
+
+/* z-index: térbeli pozíció (takarás) */
+/* nagyobb z-index <=> előrébb van */
+/*
+.doboz {
+    width: 50px;
+    height: 70px;
+}
+
+#d1 {
+    background-color: green;
+    position: absolute;
+    left: 1em;
+    z-index: 2;
+}
+
+#d2 {
+    background-color: yellow;
+    position: relative;
+    z-index: 1;
+}
+
+#d3 {
+    background-color: gray;
+    position: relative;
+    bottom: 1em;
+    z-index: 999;
+}
+*/
+
+#miert {
+    position: relative;
+}
+
+#hatter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../images/background.jpg);
+    opacity: 10%;    
 }
