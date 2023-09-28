@@ -16,3 +16,72 @@ main table {
     margin: 3% auto;
     background-color: var(--feher);
 }
+
+article {
+    padding: 15px;
+    margin: 5px;
+    font-weight: bold;
+    background-color: var(--feher);
+}
+
+/* repeat, repeat-x, repeat-y, no-repeat */
+/* #miert {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    opacity: 10%;
+} */
+
+/* position: static, relative, absolute, fixed, sticky */
+/* top, right, bottom, left */
+/* #miert-egyel {
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+} */
+
+/* absolute: relativ a legközelebbi pozicionálit őshöz képest */
+
+/* #miert {
+    position: relative;
+}
+
+#miert-egyel {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: 0;
+} */
+
+/* .doboz {
+    width: 150px;
+    height: 150px;
+}
+
+#piros {
+    background: red;
+    position: absolute;
+    left: 5em;
+    z-index: 999;
+    top: 2em;
+}
+
+#feher {
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+#kek {
+    background: blue;
+    position: relative;
+    bottom: 3em;
+    z-index: 2;
+} */
