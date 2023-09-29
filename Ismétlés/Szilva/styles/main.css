@@ -80,17 +80,55 @@ article {
 }
 */
 
+/* Ez mi ez? */
+/* Hátteret akartunk (css) */
+/* Ehhez html elemet hoztunk létre */
 #miert {
     position: relative;
 }
 
 #hatter {
+    background-color: white;
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; 
+    left: 0; */
+    inset: 0;
     z-index: -1;
     background-image: url(../images/background.jpg);
-    opacity: 10%;    
+    /* opacity: 10%; */
+    /* repeat, repeat-x, repeat-y, no-repeat */
+    background-repeat: no-repeat;
+    /* cover, contain, 100% */
+    background-size: cover;
+}
+
+article p {
+    border-left: 5px solid var(--lila);
+    padding-left: 10px;
+}
+
+#miert ul, #miert ol {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#miert li {
+    margin: 1.5em;
+}
+
+table {
+    width: 100%
+}
+
+td {
+    border: 1px dashed black;
+    height: 4em;
+    width: 50%;
 }
