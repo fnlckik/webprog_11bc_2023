@@ -1,0 +1,106 @@
+/* Általános formázások, reset */
+:root {
+    --hatter: rgba(0, 0, 250, 25%);
+    --link-hover: rgba(0, 0, 154, 0.8);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--hatter);
+}
+
+/* Main */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    clear: both;
+}
+
+main h1 a {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--link-hover);
+    color: white;
+    opacity: 80%;
+}
+
+#faq ol {
+    padding-left: 1em;
+    text-align: justify;
+    padding: 0 3em;
+}
+
+#faq li::marker {
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+.kerdes {
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+#health h1 {
+    text-align: center;
+}
+
+#health ul {
+    list-style-type: "🥛";
+    padding: .5em 2em;
+    background-color: rgba(0, 0, 155, 80%);
+}
+
+#health ul li {
+    margin-bottom: 1em;
+    padding-left: .5em;
+    color: white;
+    margin: 1em 0;
+}
+
+/* Nav */
+nav ul {
+    margin: 0;
+    list-style-position: inside;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 255, 0.2);
+    overflow: auto;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 2rem;
+}
+
+footer img {
+    width: 3em;
+    float: left;
+    padding: 1em 0;
+}
+
+footer div {
+    float: right;
+}
+
+/* -------------------------------------- */
+/* 
+    A vonal fölé is szabad dolgozni, 
+    de átláthatóbb lehet ha elválasztjuk 
+    a saját munkát a kapott forrásoktól. 
+*/
+
