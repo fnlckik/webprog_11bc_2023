@@ -85,3 +85,24 @@ article {
     bottom: 3em;
     z-index: 2;
 } */
+
+#miert {
+    position: relative;
+}
+
+/* Az ellenség keze betette a lábát! */
+/* Lehet-e szebben? */
+#hatter {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    z-index: -1;
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    inset: 0;
+}
+
