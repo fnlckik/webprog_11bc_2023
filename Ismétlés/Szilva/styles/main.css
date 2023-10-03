@@ -96,7 +96,7 @@ article {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 80%;
+    opacity: 10%;
     z-index: -1;
     position: absolute;
     /* left: 0;
@@ -106,3 +106,31 @@ article {
     inset: 0;
 }
 
+#miert p {
+    border-left: 5px solid purple;
+    padding-left: 10px;
+}
+
+#miert ul, #miert ol {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#miert li {
+    margin: 1.5em;
+}
+
+#miert ul {
+    list-style-type: none;
+}
+
+table td {
+    border: 1px dashed black;
+    height: 4em;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+}
