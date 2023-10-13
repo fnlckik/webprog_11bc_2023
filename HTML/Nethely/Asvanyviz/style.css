@@ -1,0 +1,183 @@
+/* Általános formázások, reset */
+:root {
+    --hatter: rgba(0, 0, 250, 25%);
+    --link-hover: rgba(0, 0, 154, 0.8);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--hatter);
+}
+
+/* Main */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    clear: both;
+}
+
+main h1 a {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--link-hover);
+    color: white;
+    opacity: 80%;
+}
+
+#faq ol {
+    padding-left: 1em;
+    text-align: justify;
+    padding: 0 3em;
+}
+
+#faq li::marker {
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+.kerdes {
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+#health h1 {
+    text-align: center;
+}
+
+#health ul {
+    list-style-type: "🥛";
+    padding: .5em 2em;
+    background-color: rgba(0, 0, 155, 80%);
+}
+
+#health ul li {
+    margin-bottom: 1em;
+    padding-left: .5em;
+    color: white;
+    margin: 1em 0;
+}
+
+/* Nav */
+nav ul {
+    margin: 0;
+    list-style-position: inside;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 255, 0.2);
+    overflow: auto;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 2rem;
+}
+
+footer img {
+    width: 3em;
+    float: left;
+    padding: 1em 0;
+}
+
+footer div {
+    float: right;
+}
+
+/* -------------------------------------- */
+/* 
+    A vonal fölé is szabad dolgozni, 
+    de átláthatóbb lehet ha elválasztjuk 
+    a saját munkát a kapott forrásoktól. 
+*/
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    font-variant: small-caps;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+nav a:hover, .active {
+    color: white;
+    background-color: var(--link-hover);
+}
+
+#pohar {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border: 0.1em dotted var(--link-hover);
+}
+
+#kezdolap p {
+    line-height: 1.5em;
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+#kezdolap h1 a:active {
+    color: blue;
+}
+
+h2 {
+    text-decoration: 2px dashed underline;
+}
+
+#faq ol {
+    background-image: url(pictures/bottle.png);
+    background-size: 2em;
+    background-repeat: repeat-y;
+    background-position: right center;
+}
+
+header, footer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (min-width: 700px) {
+    nav li {
+        float: left;
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+    }
+
+    #pohar {
+        float: left;
+        width: 15em;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        width: 60%;
+    }
+}
