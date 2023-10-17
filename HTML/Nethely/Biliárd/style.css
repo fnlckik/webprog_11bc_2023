@@ -1,0 +1,208 @@
+:root {
+    --zold: rgba(100, 180, 100, 0.4);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 1rem;
+    padding: 20px;
+    background-color: var(--zold);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Nav */
+header {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+nav {
+    overflow: auto;
+    font-family: fantasy;
+    font-weight: normal;
+    background-color: green;
+}
+
+nav p {
+    float: left;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline dashed;
+    background-color: rgb(0, 110, 0);
+}
+
+/* Main */
+main h1 {
+    margin-top: 0.8em;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+main h2 {
+    margin: 0.8em 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+main p {
+    line-height: 1.5rem;
+    text-align: justify;
+    margin: 1rem auto;
+}
+
+main img {
+    width: 50vw;
+    display: block;
+    margin: auto;
+}
+
+main ol, main ul {
+    padding-left: 30px;
+    margin-left: 20px;
+    letter-spacing: -1px;
+    border-left: 5px solid green;
+    list-style-type: upper-roman;
+}
+
+main ul {
+    list-style-type: circle;
+    padding-left: 35px;
+    text-indent: -5px;
+}
+
+main li {
+    margin-bottom: 0.5em;
+}
+
+#golyocsoport {
+    width: 15em;
+    float: right;
+    margin: 0 0 1em 1em;
+    border: 4px solid black;
+    box-sizing: border-box;
+}
+
+#dako {
+    width: 1rem;
+    position: fixed;
+    top: 2rem;
+    left: 0.8rem;
+    opacity: 70%;
+}
+
+section {
+    padding: 0.5em 0.25em;
+    clear: both;
+}
+
+main.hatter {
+    background-image: url(images/fekete_nyolcas.png);
+    background-size: 1em;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    padding-bottom: 2em;
+}
+
+footer {
+    margin-top: 2em;
+    background-color: green;
+    color: white;
+    font-size: 0.6rem;
+    padding: 1em;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    border: 2px solid rgba(0, 100, 0, 0.8);
+    padding: 0.25em;
+    text-align: center;
+    width: 5em;
+    height: 2em;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+td {
+    background-color: var(--zold);
+    font-weight: bold;
+}
+
+span {
+    font-variant: small-caps;
+    color: green;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5em 0;   
+}
+
+/* Reszponzivitás */
+@media (max-width: 630px) {
+    nav p {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        float: none;
+        text-align: center;
+    }
+
+    #golyocsoport {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 0 10vw;
+    }
+
+    #dako {
+        left: 5vw;
+        width: 1.5vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        padding: 0 20vw;
+    }
+    #dako {
+        left: 10vw;
+    }
+}
