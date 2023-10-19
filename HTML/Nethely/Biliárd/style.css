@@ -206,3 +206,17 @@ span {
         left: 10vw;
     }
 }
+
+main a {
+    text-decoration: none;
+    font-size: 5em;
+    color: orange;
+    font-family: "Comic Sans MS";
+    /* position: sticky;
+    bottom: 0; */
+}
+
+main a:hover {
+    background-color: rgba(0, 0, 0, 0);
+
+}
