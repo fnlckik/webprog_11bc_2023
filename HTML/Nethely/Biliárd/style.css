@@ -206,3 +206,14 @@ span {
         left: 10vw;
     }
 }
+
+main a {
+    text-decoration: none;
+    color: red;
+    font-size: 2em;
+}
+
+main a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+}
