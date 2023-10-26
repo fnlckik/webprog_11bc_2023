@@ -7,6 +7,22 @@
 </head>
 <body>
     <h1>Audió</h1>
-    
+    <!-- controls: vezérlő elemek megjelenítése -->
+    <!-- <audio controls src="audio/poterettsegi.mp3"></audio> -->
+    <audio controls>
+        <source src="audio/poterettsegi.aac" type="audio/aac">
+        <source src="audio/poterettsegi.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Videó</h1>
+    <!-- controlsList="nodownload" -->
+    <video autoplay muted loop controls>
+        <source src="video/oriasi_kiseger.mp4" type="video/mp4">
+    </video>
+
+    <!-- <script>
+        const video = document.querySelector("video")
+        video.addEventListener("contextmenu", e => e.preventDefault())
+    </script> -->
 </body>
 </html>
