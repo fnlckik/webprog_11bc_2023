@@ -1,0 +1,9 @@
+video {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
+svg {
+    background-color: gray;
+}

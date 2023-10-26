@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Hanganyag</h1>
     <!-- <audio controls src="audio/pótérettségi.mp3"></audio> -->
-    
+    <audio controls>
+        <source src="audio/pótérettségi.aac" type="audio/aac">
+        <source src="audio/pótérettségi.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Videó</h1>
+    <!-- controlsList="nodownload" -->
+    <video autoplay muted loop controls>
+        <source src="video/óriási_kisegér.mp4" type="video/mp4">
+    </video>
+
+    <!-- <script>
+        const video = document.querySelector("video")
+        video.addEventListener("contextmenu", e => e.preventDefault())
+    </script> -->
+
+    <h1>SVG</h1>
+    <svg width="400" height="300">
+        <circle cx="300" cy="100" r="50">
+
+        </circle>
+    </svg>
 </body>
 </html>
