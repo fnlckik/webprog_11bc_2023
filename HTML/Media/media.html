@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Audió</h1>
@@ -20,6 +21,21 @@
         <source src="video/oriasi_kiseger.mp4" type="video/mp4">
     </video>
 
+    <!-- Iframe: inline frame -->
+    <h1>Iframe</h1>
+    <p><a href="https://faviccek.hu/" target="ckik">Faviccek</a></p>
+    <iframe src="https://ckik.hu/" name="ckik"></iframe>
+    <iframe src="belso.html"></iframe>
+
+    <h1>SVG - Scalable Vector Graphics</h1>    
+    <svg width="400" height="300">
+        <circle 
+            cx="300" cy="100" r="50" 
+            fill="green" stroke="blue"
+        >
+    </svg>
+
+    <div></div>
     <!-- <script>
         const video = document.querySelector("video")
         video.addEventListener("contextmenu", e => e.preventDefault())
