@@ -5,5 +5,8 @@ video {
 }
 
 svg {
-    background-color: gray;
+    background-color: lightcyan;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
 }

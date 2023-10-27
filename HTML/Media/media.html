@@ -25,11 +25,32 @@
         video.addEventListener("contextmenu", e => e.preventDefault())
     </script> -->
 
-    <h1>SVG</h1>
+    <h1>SVG - Scalable Vector Graphics</h1>
     <svg width="400" height="300">
-        <circle cx="300" cy="100" r="50">
+        <circle 
+            r="15"
+            cx="250" cy="120"
+            fill="green" stroke="blue"
+        />
 
-        </circle>
+        <ellipse
+            rx="50" ry="25"
+            cx="325" cy="70"
+        />
+
+        <!-- A(x_1, y_1) és B(x_2, y_2) -->
+        <line
+            x1="250" y1="120"
+            x2="325" y2="70"
+            stroke="rgb(200, 0, 200)"
+            stroke-width="2"
+        />
+
+        <!-- A(a_1, a_2), B(b_1, b_2), C(c_1, c_2), ... -->
+        <!-- a_1,a_2 b_1,b_2 c_1,c_2 ... -->
+        <polygon 
+            points="100,20 40,70 200,30"
+        />
     </svg>
 </body>
 </html>
