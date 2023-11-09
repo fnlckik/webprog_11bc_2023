@@ -1,0 +1,40 @@
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 1em; 
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/* Egymás alá kerül a label és az input */
+/* label {
+    display: block;
+    margin: 1em 0 0.25em;
+} */
+
+br {
+    display: block;
+    margin: 1em;
+    /* height: 50px;
+    background-color: red; */
+    content: "";
+}
+
+/* Kitekintés: content tulajdonság */
+label {
+    content: url(ghost.png);
+    height: 0.5em;
+}
+
+img {
+    height: 0.5em;
+    border-left: solid;
+}
