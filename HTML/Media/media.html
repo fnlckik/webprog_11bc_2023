@@ -51,6 +51,40 @@
         <polygon 
             points="100,20 40,70 200,30"
         />
+
+        <!-- Bal felső sarok: (x, y) -->
+        <!-- Szélesség, magasság -->
+        <!-- stroke-dasharray="18,4,8,2" -->
+        <rect
+            x="50" y="150"
+            width="150" height="50"
+            fill="yellow" stroke="black"
+            stroke-width="2"
+            stroke-dasharray="18, 4"
+            rx="20" ry="30"
+        >
+            <animate
+                attributeName="fill"
+                values="orange;blue;red"
+                dur="5s"
+                repeatCount="indefinite"
+            />
+
+            <animate
+                attributeName="width"
+                values="200;50;200"
+                dur="5s"
+                repeatCount="2"
+            />
+        </rect>
+
+        <text
+            x="125" y="175"
+            text-anchor="middle"
+            alignment-baseline="central"
+        >
+            Felirat!
+        </text>
     </svg>
 </body>
 </html>
