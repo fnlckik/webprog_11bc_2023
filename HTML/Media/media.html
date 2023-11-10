@@ -9,6 +9,7 @@
 <body>
     <h1>Hanganyag</h1>
     <!-- <audio controls src="audio/pótérettségi.mp3"></audio> -->
+    <a href="audio/pótérettségi.mp3">Hanganyag letöltése</a> <br>
     <audio controls>
         <source src="audio/pótérettségi.aac" type="audio/aac">
         <source src="audio/pótérettségi.mp3" type="audio/mpeg">
@@ -26,6 +27,7 @@
     </script> -->
 
     <h1>SVG - Scalable Vector Graphics</h1>
+    <img src="Untitled.svg" alt="Figma" width="200">
     <svg width="400" height="300">
         <circle 
             r="15"
@@ -58,7 +60,7 @@
         <rect
             x="50" y="150"
             width="150" height="50"
-            fill="yellow" stroke="black"
+            fill="orange" stroke="black"
             stroke-width="2"
             stroke-dasharray="18, 4"
             rx="20" ry="30"
@@ -72,7 +74,7 @@
 
             <animate
                 attributeName="width"
-                values="200;50;200"
+                values="150;200;50;150"
                 dur="5s"
                 repeatCount="2"
             />
@@ -81,10 +83,14 @@
         <text
             x="125" y="175"
             text-anchor="middle"
-            alignment-baseline="central"
+            dominant-baseline="central"
         >
             Felirat!
         </text>
     </svg>
+
+    <h1>Iframe</h1>
+    <a href="https://faviccek.hu/" target="ckik">Faviccek</a>
+    <iframe src="https://ckik.hu" name="ckik"></iframe>
 </body>
 </html>
