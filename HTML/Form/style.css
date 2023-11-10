@@ -30,11 +30,36 @@ br {
 
 /* Kitekintés: content tulajdonság */
 label {
-    content: url(ghost.png);
-    height: 0.5em;
+    /* content: url(ghost.png); */
+    height: 1em;
+    vertical-align: middle;
 }
 
-img {
-    height: 0.5em;
-    border-left: solid;
+/* Legnagyobbat igazítjuk (nem baseline módon) */
+input {
+    /* font-size: 2em;
+    width: 2em; */
+    vertical-align: middle;
 }
+
+/* Többit a sorhoz képest igazíthatjuk */
+/* middle, top, bottom, baseline */
+img {
+    height: 1em;
+    vertical-align: middle;
+    /* border-left: solid; */
+}
+
+/* vertical: table-cell, inline */
+
+/* Emlék: táblázat cellák igazítása */
+/* table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    height: 3em;
+    vertical-align: middle;
+} */
+

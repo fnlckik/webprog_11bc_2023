@@ -8,15 +8,22 @@
 </head>
 <body>
     <h1>Verseny jelentkezés</h1>
-    <form action="verseny.html">
+    <form action="verseny.html" method="GET">
         <!-- Szöveges beviteli mező -->
         <label for="nev">Név:</label>
-        <input type="text" id="nev">
+        <input type="text" id="nev" name="nev">
         <img src="ghost.png" alt="szellem">
         <br>
 
         <label for="varos">Város:</label>
-        <input type="text" id="varos">
+        <input type="text" id="varos" name="varos">
+        <br>
+
+        <input type="submit">
+
+        <!-- Funkció nélküli gomb (egyelőre) -->
+        <!-- <input type="button" value="Gomb">
+        <button type="button">Gomb</button> -->
     </form>
 </body>
 </html>
