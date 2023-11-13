@@ -63,3 +63,17 @@ td {
     vertical-align: middle;
 } */
 
+/* Attribútum szelektor */
+
+/* Azok a label mezők, amelyek rendelkeznek for attribútummal */
+/* label[for] {
+    background-color: blue;
+} */
+
+/* Azok az input mezők, amelyek type-ja tartalmazza az "e" szöveget */
+/* input[type*="e"] */
+
+input[type="reset"], input[type="submit"] {
+    padding: 0.25em;
+}
+

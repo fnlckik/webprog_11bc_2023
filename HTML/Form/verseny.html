@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Verseny jelentkezés</h1>
+    <!-- Kitekintés: autocomplete="off" -->
     <form action="verseny.html" method="GET">
         <!-- Szöveges beviteli mező -->
         <label for="nev">Név:</label>
@@ -16,10 +17,24 @@
         <br>
 
         <label for="varos">Város:</label>
-        <input type="text" id="varos" name="varos">
+        <input type="text" id="varos">
         <br>
 
+        <label for="kor">Életkor:</label>
+        <input type="number" id="kor" min="14" max="18" step="1" name="kor">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" size="30">
+        <br>
+
+        <label for="jelszo">Jelszó:</label>
+        <input type="password" id="jelszo" required>
+        <br>
+
+        <input type="reset">
         <input type="submit">
+        <button disabled>Jelentkezés</button>
 
         <!-- Funkció nélküli gomb (egyelőre) -->
         <!-- <input type="button" value="Gomb">
