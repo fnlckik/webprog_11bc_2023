@@ -21,7 +21,8 @@ text {
 iframe {
     width: 50%;
     height: 400px;
-    margin: auto;
+    margin: 1em auto;
+    border: 2px solid black;
     display: block;
 }
 
