@@ -77,3 +77,15 @@ input[type="reset"], input[type="submit"] {
     padding: 0.25em;
 }
 
+/* Kitekintés: */
+/* accent-color: red; */
+input[type="radio"] {
+    margin-left: 1em;
+    margin-right: 0.25em;
+}
+
+/* input[type="color"] {
+    width: 2em;
+    height: 2em;
+    border: 2px solid red;
+} */

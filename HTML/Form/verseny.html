@@ -29,7 +29,31 @@
         <br>
 
         <label for="jelszo">Jelszó:</label>
-        <input type="password" id="jelszo" required>
+        <!-- <input type="password" id="jelszo" required> -->
+        <input type="password" id="jelszo">
+        <br>
+
+        <label>Nem:</label>
+        <br>
+        <input type="radio" name="nem" value="1" id="no">
+        <label for="no">Nő</label>
+        <input type="radio" name="nem" value="2" id="ferfi">
+        <label for="ferfi">Férfi</label>
+        <input type="radio" name="nem" value="3" id="nemvalasz" checked>
+        <label for="nemvalasz">Nem válaszolok</label>
+        <br>
+
+        <!-- date, datetime-local, time -->
+        <label for="szuletes">Születési idő:</label>
+        <input type="date" id="szuletes" name="szuletes">
+        <br>
+
+        <label for="szin">Kedvenc szín:</label>
+        <input type="color" id="szin">
+        <br>
+
+        <input type="checkbox" id="elfogadom" name="elfogadom" value="1">
+        <label for="elfogadom">Elfogadom a verseny szabályzatot!</label>
         <br>
 
         <input type="reset">
