@@ -27,3 +27,11 @@ h1 {
     display: inline-block;
 } */
 
+br {
+    margin: 1em auto;
+    /* height: 200px;
+    background-color: red; */
+    display: block;
+    content: "";
+}
+

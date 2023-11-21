@@ -8,13 +8,35 @@
 </head>
 <body>
     <h1>Verseny jelentkezés</h1>
+    <!-- Kitekintés: autocomplete="off" -->
     <form>
+        <!-- Elküldi a "neme" attribútummal rendelkezőket -->
         <label for="nev">Név:</label>
         <input type="text" id="nev">
         <br>
-        
+
         <label for="varos">Város:</label>
         <input type="text" id="varos">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" size="30">
+        <br>
+
+        <!-- <input type="password" id="jelszo" required> -->
+        <label for="jelszo">Jelszó:</label>
+        <input type="password" id="jelszo">
+        <br>
+
+        <label for="kor">Kor:</label>
+        <input type="number" id="kor" min="14" max="20" step="2">
+        <br>
+
+        <input type="reset" value="Vissza">
+        <input type="submit" value="Jelentkezés">
+        <!-- Funkció nélküli gomb (egyelőre) -->
+        <input type="button" value="Gomb" disabled>
+        <button type="button" disabled>Gomb2</button>
     </form>
 </body>
 </html>
