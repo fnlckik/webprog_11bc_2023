@@ -35,3 +35,8 @@ br {
     content: "";
 }
 
+/* Attribútum szelektor */
+input[type="submit"], input[type="reset"] {
+    padding: 0.5em;
+}
+
