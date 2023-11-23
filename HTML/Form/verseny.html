@@ -35,12 +35,29 @@
         <!-- Radio gomb -->
         <label>Neme:</label>
         <br>
-        <input type="radio">
-        <label>Nő</label>
-        <input type="radio">
-        <label>Férfi</label>
-        <input type="radio">
-        <label>Nem válaszolok</label>
+        <input type="radio" name="nem" id="no" value="N">
+        <label for="no">Nő</label>
+        <input type="radio" name="nem" id="ferfi" value="F">
+        <label for="ferfi">Férfi</label>
+        <input type="radio" name="nem" checked id="nincsvalasz" value="X">
+        <label for="nincsvalasz">Nem válaszolok</label>
+        <br>
+
+        <!-- date, time, datetime -->
+        <label>Születési dátum:</label>
+        <input type="date" name="szuletes" value="2023-11-23">
+        <br>
+
+        <label>Póló színe:</label>
+        <input type="color" name="poloszin">
+        <br>
+
+        <label>Beugró feladat megoldása:</label>
+        <input type="file" accept=".zip, .rar">
+        <br>
+
+        <input type="checkbox" id="szabalyok" name="szabalyok">
+        <label for="szabalyok">Elfogadom a verseny szabályzatát!</label>
         <br>
 
         <input type="reset" value="Vissza">

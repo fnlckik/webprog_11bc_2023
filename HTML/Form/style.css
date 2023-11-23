@@ -40,3 +40,6 @@ input[type="submit"], input[type="reset"] {
     padding: 0.5em;
 }
 
+input[type="radio"] {
+    margin-left: 1.25em;
+}
