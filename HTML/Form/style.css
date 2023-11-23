@@ -89,3 +89,30 @@ input[type="radio"] {
     height: 2em;
     border: 2px solid red;
 } */
+
+/* input[type="range"] {
+    accent-color: red;
+} */
+
+/* resize: both, horizontal, vertical, none */
+textarea {
+    font-family: Arial;
+    resize: none;
+}
+
+/* Pszeudo-szelektor */
+
+/* a) Pszeudo-osztályok */
+/* Adott elem állapotát választják ki */
+/* Pl.: a:hover, a:visited */
+input[type="checkbox"]:checked {
+    outline: 1px solid green;
+}
+
+/* b) Pszeudo-elemek */
+/* Adott elem egy részét választják ki */
+textarea::placeholder {
+    color: red;
+    opacity: 40%;
+}
+

@@ -52,8 +52,25 @@
         <input type="color" id="szin">
         <br>
 
+        <label for="feladat">Beugró feladat megoldása:</label>
+        <input type="file" id="feladat" name="feladat" accept=".zip, .rar" multiple>
+        <br>
+
+        <label>Mennyire kedveled az óriási kisegér videót:</label>
+        <input type="range" name="kiseger" min="10" max="40" value="30">
+        <br>
+
         <input type="checkbox" id="elfogadom" name="elfogadom" value="1">
         <label for="elfogadom">Elfogadom a verseny szabályzatot!</label>
+        <br>
+
+        <label for="mj">Megjegyzés:</label>
+        <br>
+        <textarea id="mj" cols="30" rows="5" placeholder="A webprog tanárom a kedvencem, mert..."></textarea>
+        <br>
+
+        <label>Azonosító:</label>
+        <input type="text" value="GZSN2AM21" readonly>
         <br>
 
         <input type="reset">
