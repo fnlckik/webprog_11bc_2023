@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <h1 hidden>Verseny jelentkezés</h1> -->
     <h1>Verseny jelentkezés</h1>
     <!-- Kitekintés: autocomplete="off" -->
     <form>
@@ -52,12 +53,51 @@
         <input type="color" name="poloszin">
         <br>
 
+        <label>Póló mérete:</label>
+        <br>
+        <select name="polo" multiple>
+            <option value="1">S</option>
+            <option value="2">M</option>
+            <option value="3" selected>L</option>
+            <option value="4">XL</option>
+            <option value="5" disabled>XXL</option>
+        </select>
+        <br>
+
+        <label>Mennyire kedveled az óriási kisegér videót?</label>
+        <span>10</span>
+        <input type="range" name="kiseger" min="10" max="42" value="40">
+        <span>42</span>
+        <br>
+
         <label>Beugró feladat megoldása:</label>
-        <input type="file" accept=".zip, .rar">
+        <input type="file" accept=".zip, .rar" multiple>
+        <br>
+
+        <!-- disabled form elem nem kerül küldésre -->
+        <label>Azonosító:</label>
+        <input type="text" value="XHM23L" name="azon" readonly>
         <br>
 
         <input type="checkbox" id="szabalyok" name="szabalyok">
         <label for="szabalyok">Elfogadom a verseny szabályzatát!</label>
+        <br>
+
+<!-- <pre>
+Nincsen apám, se anyám,
+se istenem, se hazám,
+se bölcsőm, se szemfedőm,
+se csókom, se szeretőm.
+
+Harmadnapja nem eszek,
+se sokat, se keveset.
+Húsz esztendőm hatalom,
+húsz esztendőm eladom.
+</pre> -->
+
+        <label for="mj">Megjegyzés:</label>
+        <br>
+        <textarea id="mj" cols="40" rows="5" maxlength="12" placeholder="Azért a webprog tanárom a kedvencem, mert..."></textarea>
         <br>
 
         <input type="reset" value="Vissza">

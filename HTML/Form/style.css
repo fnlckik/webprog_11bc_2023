@@ -43,3 +43,15 @@ input[type="submit"], input[type="reset"] {
 input[type="radio"] {
     margin-left: 1.25em;
 }
+
+/* resize: both, horizontal, vertical, none */
+textarea {
+    font-family: Arial;
+    resize: none;
+}
+
+option[disabled] {
+    color: red;
+    background-color: lightgray;
+}
+
