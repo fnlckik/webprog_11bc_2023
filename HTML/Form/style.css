@@ -105,9 +105,15 @@ textarea {
 /* a) Pszeudo-osztályok */
 /* Adott elem állapotát választják ki */
 /* Pl.: a:hover, a:visited */
+/* Dinamikus => követi a változásokat */
 input[type="checkbox"]:checked {
     outline: 1px solid green;
 }
+
+/* Statikus => csak azt figyeli, hogy mi van a html-ben */
+/* input[checked] {
+    outline: 1px solid blue;
+} */
 
 /* b) Pszeudo-elemek */
 /* Adott elem egy részét választják ki */
@@ -116,3 +122,21 @@ textarea::placeholder {
     opacity: 40%;
 }
 
+input[readonly] {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+    opacity: 80%;
+}
+
+/* input:read-only {
+    text-align: center;
+    background-color: purple;
+    color: white;
+    border: 1px solid black;
+} */
+
+/* select {
+    resize: both;
+} */

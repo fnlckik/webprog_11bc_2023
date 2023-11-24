@@ -60,6 +60,36 @@
         <input type="range" name="kiseger" min="10" max="40" value="30">
         <br>
 
+        <label>Póló méret:</label>
+        <br>
+        <select name="polo" multiple>
+            <option value="1">XS</option>
+            <option value="2">S</option>
+            <option value="3" selected>M</option>
+            <option value="4">L</option>
+            <option value="5">XL</option>
+            <option value="6" disabled>XXL</option>
+        </select>
+        <br>
+
+        <label>Melyik kategóriában indulsz?</label>
+        <select name="kategoria">
+            <optgroup label="Gimnázium">
+                <option value="g9">9. évfolyam</option>
+                <option value="g10">10. évfolyam</option>
+                <option value="g11">11. évfolyam</option>
+                <option value="g12">12. évfolyam</option>
+            </optgroup>
+            <optgroup label="Technikum">
+                <option value="t9">9. évfolyam</option>
+                <option value="t10">10. évfolyam</option>
+                <option value="t11">11. évfolyam</option>
+                <option value="t12">12. évfolyam</option>
+                <option value="t13">13. évfolyam</option>
+            </optgroup>
+        </select>
+        <br>
+
         <input type="checkbox" id="elfogadom" name="elfogadom" value="1">
         <label for="elfogadom">Elfogadom a verseny szabályzatot!</label>
         <br>
@@ -69,8 +99,10 @@
         <textarea id="mj" cols="30" rows="5" placeholder="A webprog tanárom a kedvencem, mert..."></textarea>
         <br>
 
+        <!-- disabled elem nem kerül küldésre -->
         <label>Azonosító:</label>
-        <input type="text" value="GZSN2AM21" readonly>
+        <input type="text" value="GZSN2A" readonly name="azon">
+        <!-- <span name="azon">GZSN2A</span> -->
         <br>
 
         <input type="reset">
