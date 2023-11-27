@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikulás - Kívánság</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.jpg">
+    <meta name="description" content="Kívánj a mikulástól bármilyen ajándékot! Levél küldése helyett már elektronikus űrlap kitöltésével is jelezheted, hogy milyen meglepetésre vágysz!">
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="kivansag.html">Kívánság</a></li>
+            <li><a href="rajzok.html">Rajzok</a></li>
+        </ul>
+    </nav>
+
+    <h1>Szól egy kívánság!</h1>
+
+    <h2>Írd meg a mikulásnak, hogy mit szeretnél karácsonyra!</h1>
+
+    <form>
+        <label for="nev">Név:</label>
+        <input type="text" id="nev">
+        <br>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" placeholder="06 20 / 123 45 67">
+        <br>
+
+        <label for="jo-rossz">Mennyire voltál jó? (csak őszintén)</label>
+        <br>
+        <div id="jo-rossz">
+            <span>Rossz</span>
+            <input type="range" min="1" max="100">
+            <span>Jó</span>
+        </div>
+        <br>
+
+        <label>Hová kéred az ajándékot?</label>
+        <br>
+        <input type="radio" value="1" name="ajandek" id="karacsonyfa">
+        <label for="karacsonyfa">Karácsonyfa alá</label>
+        <input type="radio" value="2" name="ajandek" id="kandallo" disabled>
+        <label for="kandallo">Kandalló mellé</label>
+        <input type="radio" value="3" name="ajandek" id="szoba">
+        <label for="szoba">Szoba</label>
+        <input type="radio" value="4" name="ajandek" id="meglepi">
+        <label for="meglepi">Meglepetés</label>
+        <br>
+
+        <label>Milyen ajándékot szeretnél?</label>
+        <select>
+            <option>Társasjáték</option>
+            <option selected>Könyv</option>
+            <option>Bicikli</option>
+            <option>Ruha</option>
+            <option>Fornite skin</option>
+            <option hidden>Pisztácia fagyi</option>
+        </select>
+        <br>
+
+        <label for="leiras">Ajándék részletes leírása:</label>
+        <br>
+        <textarea id="leiras" cols="40" rows="4"></textarea>
+        <br>
+        
+        <input type="submit">
+    </form>
+
+
+    <h2>Karácsony - Agymenők stílusban</h2>
+    <video src="media/jingle-bells.mp4" controls></video>
+    
+</body>
+</html>

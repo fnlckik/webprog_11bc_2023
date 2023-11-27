@@ -1,0 +1,142 @@
+:root {
+    --mikulas-voros: rgba(192, 0, 0, 0.9);
+    --krem: #FFF5E1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem auto;
+    width: 80%;
+    background-color: var(--krem);
+}
+
+header {
+    background-image: url(images/header_background.jpg);
+    background-size: 40%;
+    background-position: center;
+    height: 3em;
+}
+
+nav ul {
+    list-style: none;
+    overflow: auto;
+    background-color: var(--mikulas-voros);
+}
+
+nav ul li a {
+    float: left;
+    color: var(--krem);
+    text-decoration: none;
+    padding: 0.5em .75em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: var(--mikulas-voros);
+}
+
+iframe {
+    display: block;
+    margin: 0.5em auto;
+    width: 80%;
+    height: 300px;
+    border: 0px;
+}
+
+h1, h2, p {
+    margin: 1rem auto;
+}
+
+body > img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+}
+
+audio {
+    width: 50%;
+    height: 3em;
+    border: 1px solid black;
+}
+
+video {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+br {
+    content: "";
+    display: block;
+    margin: 1rem;
+}
+
+article {
+    background-color: lightcyan;
+    padding: 0 1em 1em 1em;
+    border: 3px groove var(--mikulas-voros);
+}
+
+article ul {
+    list-style-type: "- ";
+    padding-left: calc(2rem / 3);
+    line-height: 1.5em;
+}
+
+form {
+    background-color: var(--mikulas-voros);
+    color: var(--krem);
+    padding: 1.25em;
+    font-weight: bold;
+}
+
+form * {
+    font-size: 1.25rem;
+    font-family: "Comic Sans MS";
+}
+
+input[type="submit"] {
+    padding: 0.5em;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    width: 5em;
+}
+
+input[type="range"] {
+    width: 50%;
+    accent-color: black;
+    vertical-align: middle;
+}
+
+span {
+    font-size: 0.75em;
+    vertical-align: middle;
+}
+
+#ajandek {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+input[type="checkbox"] + label {
+    font-size: 0.75em;
+}
+
+#jo-rossz {
+    text-align: center;
+}
+
+/* További CSS */
+
