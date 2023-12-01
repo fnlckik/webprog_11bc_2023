@@ -140,3 +140,61 @@ input[type="checkbox"] + label {
 
 /* További CSS */
 
+/* F9 */
+/* audio {
+    float: right;
+} */
+
+/* header {
+    text-align: right;
+} */
+
+/* header {
+    position: relative;
+}
+
+audio {
+    position: absolute;
+    right: 0;
+} */
+
+/* F10 */
+textarea, video {
+    max-width: 100%;
+}
+
+/* F11 */
+iframe[name] {
+    height: 13vw;
+}
+
+/* F12 */
+input[type="radio"] {
+    margin-left: 1.25em;
+}
+
+/* #hova + br + input {
+    margin-left: 0;
+} */
+
+/* F13 */
+/* Pszeudo-elem */
+/* Elem adott részére érvényes a formázás. */
+input[type="tel"]::placeholder {
+    font-style: italic;
+}
+
+/* Pszeudo-osztály */
+/* Elem adott állapotában érvényes a formázás. */
+/* a:hover, a:visited, a:active */
+/* F14 */
+input:focus {
+    color: green;
+}
+
+input:checked {
+    outline: 3px solid yellow;
+}
+/* input[checked] {
+    outline: 3px solid yellow;
+} */

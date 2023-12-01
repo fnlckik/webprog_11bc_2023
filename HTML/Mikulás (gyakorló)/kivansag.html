@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikulás - Kívánság</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Kívánj a mikulástól bármilyen ajándékot! Levél küldése helyett
-    már elektronikus űrlap kitöltésével is jelezheted, hogy milyen
-    meglepetésre vágysz!">
+    <link rel="icon" href="images/favicon.jpg">
+    <meta name="description" content="Kívánj a mikulástól bármilyen ajándékot! Levél küldése helyett már elektronikus űrlap kitöltésével is jelezheted, hogy milyen meglepetésre vágysz!">
 </head>
 <body>
     <header>
@@ -22,27 +21,28 @@
 
     <h1>Szól egy kívánság!</h1>
 
-    <h2>Írd meg a mikulásnak, hogy mit szeretnél karácsonyra!</h1>
+    <h2>Írd meg a mikulásnak, hogy mit szeretnél karácsonyra!</h2>
 
-    <form>
-        <label for="nev">Név:</label>
-        <input type="text" id="nev">
+    <!-- <form action="http://localhost/mikulas/" method="GET"> -->
+    <form action="kivansag.html">
+        <label for="nev">Név: </label>
+        <input type="text" id="nev" name="nev">
         <br>
 
-        <label for="telefonszam">Telefonszám:</label>
-        <input type="tel" id="telefonszam" placeholder="06 20 / 123 45 67">
+        <label for="cim">Telefonszám: </label>
+        <input type="tel" placeholder="06 20 / 123 45 67" id="cim">
         <br>
 
-        <label for="jo-rossz">Mennyire voltál jó? (csak őszintén)</label>
+        <label>Mennyire voltál jó? (csak őszintén)</label>
         <br>
-        <div id="jo-rossz">
+        <div>
             <span>Rossz</span>
             <input type="range" min="1" max="100">
             <span>Jó</span>
         </div>
         <br>
 
-        <label>Hová kéred az ajándékot?</label>
+        <label id="hova">Hová kéred az ajándékot?</label>
         <br>
         <input type="radio" id="fa" name="hely" value="1">
         <label for="fa">Karácsonyfa alá</label>
@@ -50,18 +50,18 @@
         <label for="kandallo">Kandalló mellé</label>
         <input type="radio" id="szoba" name="hely" value="3">
         <label for="szoba">Szoba</label>
-        <input type="radio" id="meglepi" name="hely" value="4">
-        <label for="meglepi">Meglepetés</label>
+        <input type="radio" id="rejtve" name="hely" value="4">
+        <label for="rejtve">Meglepetés</label>
         <br>
 
-        <label for="tipus">Milyen ajándékot szeretnél?</label>
-        <select id="tipus">
-            <option>Társasjáték</option>
-            <option selected>Könyv</option>
-            <option>Bicikli</option>
-            <option>Ruha</option>
-            <option>Fornite skin</option>
-            <option hidden>Pisztácia fagyi</option>
+        <label>Milyen ajándékot szeretnél? </label>
+        <select>
+            <option value="1">Társasjáték</option>
+            <option value="2" selected>Könyv</option>
+            <option value="3">Bicikli</option>
+            <option value="4">Ruha</option>
+            <option value="5">Fortnite skin</option>
+            <option value="6" hidden>Pisztácia fagyi</option>
         </select>
         <br>
 
@@ -70,21 +70,42 @@
         <textarea id="leiras" cols="40" rows="4"></textarea>
         <br>
 
-        <label for="ora">Hány órára kéred:</label>
-        <input type="time" value="20:08" id="ora">
+        <label for="mikor">Hány órára kéred? </label>
+        <input type="time" id="mikor" value="20:08">
         <br>
 
-        <label for="csomagolas">Milyen színű legyen a csomagolás?</label>
-        <input type="color" value="#001E96">
+        <label for="csomagolas">Milyen színű legyen a csomagolás? </label>
+        <input type="color" id="csomagolas" value="#001E96">
         <br>
 
-        <input type="submit" value="Küldés">
-        <!-- <button>Küldés</button> -->
+        <label>Töltsd fel kézzel írt leveled is! </label>
+        <input type="file" accept=".png, .jpg, .pdf">
+        <br>
+
+        <p id="ajandek">Idén minden kívánság mellé ajándék szaloncukor jár!</p>
+        <label>Melyik szaloncukor a kedvenced?</label>
+        <br>
+        <input type="radio" id="zseles" name="cukor" value="1">
+        <label for="zseles">Zselés</label>
+        <input type="radio" id="kokuszos" name="cukor" value="2">
+        <label for="kokuszos">Kókuszos</label>
+        <input type="radio" id="karamellas" name="cukor" value="3">
+        <label for="karamellas">Karamellás</label>
+        <br>
+
+        <input type="checkbox" id="joleszek" checked>
+        <label for="joleszek">Ígérem, hogy mindig jó leszek webprogramozás tanáromhoz, Istenként tisztelem és  figyelem minden szavát!</label>
+        <br>
+        <input type="checkbox" id="nemkesek" required>
+        <label for="nemkesek">Fogadom, hogy soha többé nem kések el egyetlen tanóráról sem, az étkezést becsöngetés előtt befejezem!</label>
+        <br>
+
+        <input type="submit">
     </form>
 
 
     <h2>Karácsony - Agymenők stílusban</h2>
     <video src="media/jingle-bells.mp4" controls></video>
-    
+
 </body>
 </html>
