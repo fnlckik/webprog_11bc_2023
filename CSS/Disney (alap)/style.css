@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono&family=Rubik+Bubbles&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2em;
+    background-color: antiquewhite;
+}
+
+h1, h2 {
+    margin: 1em auto;
+}
+
+p {
+    margin: 1em 0;
+    text-align: justify;
+    font-family: "Quite Magical";
+}
+
+ul {
+    font-family: "Quite Magical";
+    font-size: 0.75rem;
+    padding-left: 1em;
+}
+
+li {
+    margin: 0.1em 0;
+    font-size: 1rem;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+table {
+    background-color: white;
+    margin: auto;
+    border: 3px solid black;
+}
+
+td, th {
+    padding: 0.5em;
+}
+
+article table {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+label {
+    display: inline-block;
+    margin: 0.3em auto;
+    font-family: "Quite Magical";
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 0.5em auto;
+}
+
+footer div {
+    text-align: center;
+    margin: 0;
+}
+
+footer img {
+    height: 3em;
+}
+
+/* ---------------------------------------------- */
+/* Betűtípus */
+@font-face {
+    src: url(Fonts/QuiteMagicalRegular-8VA2.ttf);
+    font-family: "Quite Magical";
+}
+
+h2 {
+    font-family: "Quite Magical";
+}
+
+h1 {
+    font-family: "Indie Flower";
+}
+
+/* ---------------------------------------------- */
+/* Mese */
+
+
+
+/* ---------------------------------------------- */
+/* Törpök nevei */
+
+
+
+/* ---------------------------------------------- */
+/* Disney rajzfilmek */
+
+
+
+/* ---------------------------------------------- */
+/* Disney rajongók */
+
+
+
+/* ---------------------------------------------- */
+/* Footer */
