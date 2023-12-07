@@ -99,13 +99,56 @@ h1 {
 
 /* ---------------------------------------------- */
 /* Mese */
+/* A "h2" elemeket közvetlen követő "p"-k első sora */
+/* +: közvetlen követő tesó */
+h2 + p::first-line {
+    font-weight: bold;
+}
 
+h2 + p::first-letter {
+    /* font-size: 2em; */
+    initial-letter: 2;
+    margin-right: 0.2em;
+}
 
+h2::selection {
+    background-color: white;
+}
 
 /* ---------------------------------------------- */
 /* Törpök nevei */
 
+/* ~: összes későbbi (fiatalabb) tesók */
+br ~ label {
+    font-size: 1.5em;
+    color: grey;
+    margin: 0;
+    margin-right: 1em;
+    vertical-align: middle;
+}
 
+/*MO2 Bogi */
+/* label[for] {
+    font-size: 1.5em;
+    color: grey;
+    margin-right: 1em;
+} */
+
+input:checked + label {
+    color: green;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+li:first-child {
+    color: darkred;
+}
+
+li:first-child ~ li {
+    color: green;
+}
 
 /* ---------------------------------------------- */
 /* Disney rajzfilmek */
