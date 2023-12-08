@@ -142,18 +142,59 @@ input[type="radio"] {
     vertical-align: middle;
 }
 
+/* :first-child: első gyerek */
+/* :first-of-type: első adott típusú gyerek */
 li:first-child {
     color: darkred;
 }
 
-li:first-child ~ li {
+/* *: minden (univerzális szelektor) */
+li:first-child ~ *{
     color: green;
+}
+
+li::marker {
+    color: gold;
+    font-size: 1.5em;
+    /* content: "❤ "; */
+}
+
+/* ::before, ::after szelektoroknál a content kötelező! */
+h2::before {
+    content: "🎄";
+    margin-right: 0.25em;
+}
+
+/* MO1 */
+/* li::after {
+    content: ";";
+}
+li:last-child::after {
+    content: "";
+} */
+
+/* :not(<selector>): azon elemek, amikre nem teljesül az adott szelektor */
+li:not(:last-child)::after {
+    content: ";";
 }
 
 /* ---------------------------------------------- */
 /* Disney rajzfilmek */
+tr:first-child {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
 
+td:first-child, td:last-child {
+    text-align: center;
+}
 
+/* :has(<selector>): aki rendelkezik ilyen tulajdonságú utóddal */
+tr:has(td.kedvenc) {
+    background-color: lightgreen;
+}
 
 /* ---------------------------------------------- */
 /* Disney rajongók */
