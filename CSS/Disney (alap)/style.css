@@ -114,12 +114,99 @@ h2 + p::first-letter {
 /* ---------------------------------------------- */
 /* Törpök nevei */
 
+/* MO1 (Zoli) */
+/* label[for] {
+    color: grey;
+    font-size: 1.5em;
+    margin-right: 1em;
+} */
+
+/* MO2 (Bálint) */
+/* :first-child: első gyereke valakinek */
+/* label {
+    color: grey;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+label:first-child {
+    color: black;
+    font-size: 1em;
+    margin-right: 0;
+} */
+
+/* MO3 (Máté) */
+/* :not(<selector>): amire nem teljesül a belső szelektor */
+/* label:not(:first-child) {
+    color: grey;
+    font-size: 1.5em;
+    margin-right: 1em;
+} */
+
+/* MO4 (Szabolcs) */
+/* ~: későbbi tesók (fiatalabbak) */
+label ~ label {
+    color: grey;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+/* MO5 (Szabolcs + Máté) */
+/* input + label {
+    color: grey;
+    font-size: 1.5em;
+    margin-right: 1em;
+} */
+
+input:checked + label{
+    color: green;
+}
+
+/* Szabolcs */
+li:first-child {
+    color: darkred;
+}
+/* li:not(:first-child) {
+    color: green;
+} */
+
+/* t_fnorbi */
+li:first-child ~ li{
+    color: green;
+}
+
+li::marker {
+    color: gold;
+    font-size: 1.5em;
+    content: "kiegtem ";
+    font-family: "linefont";
+}
+
+h2::before {
+    content: "🎄";
+    margin-right: 0.25em;
+}
+
+/* Szabolcs */
+li:not(:last-child)::after {
+    content: ";";
+}
 
 
 /* ---------------------------------------------- */
 /* Disney rajzfilmek */
+tr:first-child {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
 
-
+/* td:first-child, td:last-child {
+    text-align: center;
+} */
+tr :first-child, tr :last-child {
+    text-align: center;
+}
 
 /* ---------------------------------------------- */
 /* Disney rajongók */
