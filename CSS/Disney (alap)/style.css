@@ -198,8 +198,66 @@ tr:has(td.kedvenc) {
 
 /* ---------------------------------------------- */
 /* Disney rajongók */
+/* article table {
+    border-spacing: .3em;
+    border-collapse: separate;
+} */
 
+/* MO2 */
+table:last-child {
+    border-spacing: .3em;
+    border-collapse: separate;
+}
 
+/* NO WAY!!! - "Ne csináld Máté!" */
+/* article table tr:nth-child(2),
+article table tr:nth-child(4),
+article table tr:nth-child(6),
+article table tr:nth-child(8) {
+    background-color: rgba(0, 0, 255, 20%);
+} */
+
+/* even, odd */
+/* article table tr:nth-child(even) {
+    background-color: rgba(0, 0, 255, 20%);
+} */
+
+/* An+B, ahol A és B egészek */
+article table tr:nth-child(2n) {
+    background-color: rgba(0, 0, 255, 20%);
+}
+
+article table tr:nth-child(2n+1):not(:first-child) {
+    background-color: rgba(255, 0, 0, 20%);
+}
+
+/* 
+Gyerekekkel kapcsolatos pszeudo-szelektorok
+:first-child => az első gyerek
+:last-child
+:nth-child(An+B)
+:only-child
+:first-of-type => az első adott típusú gyerek
+:last-of-type
+:nth-last-of-type(An+B)
+:only-of-type
+*/
+
+/* Magyar színek! */
+/* article table tr:nth-child(3n) {
+    background-color: green;
+}
+
+article table tr:nth-child(3n+1) {
+    background-color: red;
+}
+
+article table tr:nth-child(3n+2) {
+    background-color: white;
+} */
 
 /* ---------------------------------------------- */
 /* Footer */
+footer *:not(div, div p) {
+    color: darkred;
+}
