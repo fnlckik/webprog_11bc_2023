@@ -208,10 +208,48 @@ tr :first-child, tr :last-child {
     text-align: center;
 }
 
+/* :has(<selector>) - rendelkezik adott szelektorra illeszkedő utóddal */
+tr:has(td.kedvenc) {
+    background-color: lightgreen;
+}
+
 /* ---------------------------------------------- */
 /* Disney rajongók */
 
+/* 
+:first-child => első gyerek
+:first-of-type => adott típusú gyerekek közül az első
+*/
+/* 
+:first-child, :last-child, :nth-child(???)
+:first-of-type, :last-of-type, :nth-of-type(???)
+*/
 
+article table {
+    border-collapse: separate;
+    border-spacing: 0.3em;
+}
+
+/* article table tr:nth-child(2),
+article table tr:nth-child(4),
+article table tr:nth-child(6),
+article table tr:nth-child(8) {
+    background-color: rgba(0, 0, 255, 0.2);
+} */
+
+/* even, odd */
+/* article table tr:nth-child(even) {
+    background-color: rgba(0, 0, 255, 0.2);
+} */
+
+/* :nth-child(An+B) => A-val osztva B maradékot ad */
+article table tr:nth-child(2n) {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+article table tr:nth-child(2n+1):not(:first-child) {
+    background-color: rgba(255, 0, 0, 0.2);
+}
 
 /* ---------------------------------------------- */
 /* Footer */
