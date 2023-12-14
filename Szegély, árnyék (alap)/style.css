@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:wght@800&family=Oswald&family=Permanent+Marker&family=Rubik+Bubbles&family=Ubuntu:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+    margin: 5vw;
+}
+
+h1 {
+    color: rgb(192, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3em;
+    background-image: url(images/disney_background.jpg);
+    background-position: center;
+}
+
+img {
+    width: 30em;
+    margin: 20px auto;
+    display: block;
+}
+
+p {
+    margin: 1em auto;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+div {
+    margin: 3em auto;
+    padding: 1em;
+}
+
+form {
+    background-color: white;
+    padding: 2em;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 1em auto;
+}
+
+input[type="radio"] {
+    margin-right: 0.25em;
+}
+
+/* 
+--------------------------------------------- 
+További CSS beállítások
+---------------------------------------------  
+*/
+
+/* 
+--------------------------------------------- 
+Képek, szegélyek, árnyékok
+---------------------------------------------  
+*/
+
+
+
+/* 
+--------------------------------------------- 
+Bekezdések (3 db), színátmenet
+---------------------------------------------  
+*/
+
+
+
+/* 
+--------------------------------------------- 
+Form elemek
+---------------------------------------------  
+*/
+
+
+
+/* 
+--------------------------------------------- 
+Átlátszó háttérkép
+---------------------------------------------  
+*/
+
+
