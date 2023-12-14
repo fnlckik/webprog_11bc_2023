@@ -253,3 +253,32 @@ article table tr:nth-child(2n+1):not(:first-child) {
 
 /* ---------------------------------------------- */
 /* Footer */
+footer p {
+    text-align: center;
+}
+
+/* combinator */
+/* >: közvetlen utód (gyerek) */
+footer > p {
+    color: darkred;
+}
+
+
+/* ----------------- */
+
+/* h2 + p ~ p {
+    font-style: italic;
+}
+
+h2 + p + p {
+    color: red;
+}
+
+h2 + p {
+    & ~ p {
+    font-style: italic;
+    }
+    & + p {
+    color: red;
+    }
+} */
