@@ -258,6 +258,16 @@ article table tr:nth-child(3n+2) {
 
 /* ---------------------------------------------- */
 /* Footer */
-footer *:not(div, div p) {
+/* footer *:not(div, div p) {
     color: darkred;
+} */
+
+/* +, ~, > */
+/* >: közvetlen utód (gyerek) */
+footer > p {
+    color: darkred;
+}
+
+footer p {
+    text-align: center;
 }
