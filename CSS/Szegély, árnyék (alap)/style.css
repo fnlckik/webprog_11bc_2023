@@ -75,6 +75,7 @@ img:first-of-type {
     border-radius: 100px 20px;
     /* border-top-left-radius: 100px; */
     outline: 5px solid black;
+    box-shadow: 10px -10px blue, -10px 10px green;
 }
 
 /* #kor {
@@ -84,6 +85,20 @@ img:first-of-type {
     border-radius: 50%;
 } */
 
+/* form + img */
+/* img:last-of-type */
+/* img:last-child */
+/* img:nth-of-type(2) */
+form + img {
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+
+/* text-shadow: <x> <y> <blur> <color>*/
+h1 {
+    font-family: "Permanent Marker";
+    text-shadow: 2px 3px black, 0px 0px 3px black;
+}
 
 /* 
 --------------------------------------------- 
@@ -91,7 +106,13 @@ Bekezdések (3 db), színátmenet
 ---------------------------------------------  
 */
 
+/* Legalább 3 db <p> gyereket tartalmaz */
+/* div:has(p:nth-of-type(3))  */
 
+div:has(p) {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, blue 5%, black 45% 55%, red 95%);
+}
 
 /* 
 --------------------------------------------- 
