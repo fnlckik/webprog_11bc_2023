@@ -85,6 +85,20 @@ img:first-of-type {
     border-radius: 50%;
 } */
 
+form + img {
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: "Permanent Marker";
+    text-shadow: 2px 3px black, 0px 0px 3px black;
+}
+
+/* p {
+    color: yellow;
+    text-shadow: 0px 0px 2px black;
+} */
 
 /* 
 --------------------------------------------- 
@@ -92,7 +106,11 @@ Bekezdések (3 db), színátmenet
 ---------------------------------------------  
 */
 
-
+div:has(p) {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, blue 5%, black 45% 55%, red 95%);
+    box-shadow: 10px 10px 30px black;
+}
 
 /* 
 --------------------------------------------- 
