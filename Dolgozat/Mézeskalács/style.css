@@ -1,0 +1,207 @@
+:root {
+    --barna: #8B4513;
+    --voros: #b53737;
+    --vilagosbarna: #f8f0e3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--vilagosbarna);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--barna);
+    color: #fff;
+    font-family: "Cinzel Decorative";
+}
+
+div div {
+    font-size: 0.8em;
+}
+
+body > div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+img {
+    width: 40%;
+    float: left;
+    margin: 0 5%;
+}
+
+hr {
+    visibility: hidden;
+    clear: both;
+}
+
+h2 {
+    padding-top: 0.5em;
+    color: var(--barna);
+}
+
+button {
+    background-color: var(--barna);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--voros);
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+table {
+    max-width: 100%;
+    width: fit-content;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 2px dashed black;
+    background-color: var(--vilagosbarna);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+th, td {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    background-color: white;
+}
+
+th {
+    background-color: var(--barna);
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form br {
+    content: "";
+    display: block;
+    margin: 1em 0;
+}
+
+footer {
+    background-color: var(--barna);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* -------------------------------------------------- */
+
+/* F1 */
+@font-face {
+    font-family: "Cinzel Decorative";
+    src: url(fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+
+/* F2 */
+table {
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+/* F3 */
+h2 {
+    text-shadow: 0 0 2px black;
+}
+
+/* F4 */
+img {
+    box-shadow: 8px 10px 20px black;
+    border-radius: 20px;
+}
+
+/* F5 */
+body {
+    background-image: linear-gradient(135deg, white, #8B4513 70%);
+}
+
+/* F6 */
+ol li:nth-child(5) ~ li {
+    font-style: italic;
+}
+
+/* F7 */
+input[required] {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* F8 */
+input[type="radio"] {
+    margin-left: 2em;
+}
+
+/* F9 */
+input + label {
+    padding: 12px;
+}
+
+/* F10 */
+input:checked + label {
+    background-color: rgba(0, 255, 0, 0.1);
+    border-radius: 50%;
+}
+
+/* F11 */
+textarea::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+/* F12 */
+/* header + div > p */
+/* body > div > p */
+/* p:not(div div p) */
+div:nth-child(2) > p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* F13 */
+td:last-child {
+    background-color: lightcyan;
+}
+
+/* F14 */
+/* table tr:nth-child(3n+1):not(:first-child) */
+table tr:nth-child(3n+4) {
+    outline: 5px solid green;
+}
+
+/* F15 */
+label:not(input[type="radio"] + label)::after {
+    content: ":";
+}
