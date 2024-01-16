@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mézeskalács</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body>
+    <header>
+        <h1>Mézeskalács sütemény</h1>
+    </header>
+
+    <div>
+        <h2>Üdvözöllek a weboldalon!</h2>
+        <p>Képek, információk és finom receptek!</p>
+
+        <img src="images/mezeskalacs.jpg" alt="Mézeskalács kép">
+        <img src="images/diszes-mezeskalacs.jpg" alt="Mézeskalács kép">
+
+        <hr>
+
+        <div>
+            <h2>Mézeskalács Recept</h2>
+            <p>Íme a finom mézeskalács recept! Próbáld ki vagy rendelj tőlünk!</p>
+
+            <h3>Hozzávalók:</h3>
+            <ul>
+                <li>150 g porcukor</li>
+                <li>120 g vaj</li>
+                <li>250 g méz</li>
+                <li>1 tojás</li>
+                <li>1 teáskanál őrölt fahéj</li>
+                <li>1/2 teáskanál őrölt szegfűszeg</li>
+                <li>1/2 teáskanál őrölt gyömbér</li>
+                <li>500 g finomliszt</li>
+                <li>1/2 teáskanál szódabikarbóna</li>
+            </ul>
+
+            <h3>Elkészítés:</h3>
+            <ol>
+                <li>Melegítsd elő a sütőt 180 °C-ra.</li>
+                <li>Keverd össze a mézet, cukrot és vajat, majd add hozzá a tojást.</li>
+                <li>Adj hozzá fűszereket, majd keverd össze a lisztet és szódabikarbónát.</li>
+                <li>Gyúrd össze a tésztát, majd pihentesd a hűtőben 1 órán keresztül.</li>
+                <li>Nyújtsd ki a tésztát, vágd ki a formákat, majd süsd őket 10-12 percig.</li>
+                <li>Készíts glazúrt a tojásfehérjéből, porcukorból és citromléből.</li>
+                <li>Kend meg vele a kihűlt mézeskalácsokat.</li>
+                <li>Díszítsd kedved szerint, majd hagyd a glazúrt megszáradni.</li>
+            </ol>
+        </div>
+
+        <h2>Mézeskalács árak</h2>
+        <table>
+            <tr>
+                <th>Termék neve</th>
+                <th>Méret</th>
+                <th>Ízvilág</th>
+                <th>Ár</th>
+            </tr>
+            <tr>
+                <td>Hagyományos</td>
+                <td>Közepes</td>
+                <td>Méz, fahéj</td>
+                <td>1200 Ft</td>
+            </tr>
+            <tr>
+                <td>Karácsonyi</td>
+                <td>Nagy</td>
+                <td>Gyömbér, szegfűszeg</td>
+                <td>1500 Ft</td>
+            </tr>
+            <tr>
+                <td>Mandulás</td>
+                <td>Kis</td>
+                <td>Mandula, vanília</td>
+                <td>1000 Ft</td>
+            </tr>
+            <tr>
+                <td>Gluténmentes</td>
+                <td>Közepes</td>
+                <td>Narancs, kókusz</td>
+                <td>1800 Ft</td>
+            </tr>
+            <tr>
+                <td>Cukormentes</td>
+                <td>Nagy</td>
+                <td>Vanília, dió</td>
+                <td>2000 Ft</td>
+            </tr>
+            <tr>
+                <td>Mézeskalács ház</td>
+                <td>Nagy</td>
+                <td>Fűszerek keveréke</td>
+                <td>2500 Ft</td>
+            </tr>
+            <tr>
+                <td>Csillag alakú</td>
+                <td>Közepes</td>
+                <td>Mályvacukor, fahéj</td>
+                <td>1300 Ft</td>
+            </tr>
+            <tr>
+                <td>Hópehely alakú</td>
+                <td>Kis</td>
+                <td>Citrom, gyömbér</td>
+                <td>1100 Ft</td>
+            </tr>
+            <tr>
+                <td>Szív alakú</td>
+                <td>Nagy</td>
+                <td>Málna, fehércsoki</td>
+                <td>1700 Ft</td>
+            </tr>
+            <tr>
+                <td>Kandírozott gyümölcsös</td>
+                <td>Közepes</td>
+                <td>Mézeskalács alap, gyümölcsök</td>
+                <td>1600 Ft</td>
+            </tr>
+        </table>
+
+        <h2>Mondd el a véleményed!</h2>
+        <form>
+            <label>Teljes név</label>
+            <input type="text" name="nev" required>
+            <br>
+
+            <label>Életkor</label>
+            <input type="number" value="30" min="18" max="90">
+            <br>
+
+            <label>Nem</label>
+            <br>
+            <input type="radio" name="nem" id="no">
+            <label for="no">Nő</label>
+            <input type="radio" name="nem" id="ferfi">
+            <label for="ferfi">Férfi</label>
+            <input type="radio" name="nem" id="egyeb" checked>
+            <label for="egyeb">Egyéb</label>
+            <br>
+
+            <label for="uzenet">Üzenet</label>
+            <br>
+            <textarea id="uzenet" name="uzenet" rows="12" placeholder="Írd le a véleményed..." cols="60"></textarea>
+            <br>
+
+            <button type="submit">Küldés</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mézeskalács Weboldal. Minden jog fenntartva.</p>
+    </footer>
+</body>
+
+</html>
