@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KFC</title>
+    <meta name="description" content="Fedezd fel a KFC ízvilágát az eredeti fűszeres csirkéjükkel és különleges ajánlataikkal">
+</head>
+<body>
+    <header>
+        <h1>Kiemelten Fűszeres Csirke 🍗</h1>
+    </header>
+
+    <main>
+        <h1>Vásárolj nálunk!</h1>
+
+        <p>Kóstold meg az eredeti <strong>íz</strong>eket a KFC-nél, ahol minden falat egy utazás a kulináris <strong>élvezet</strong>ek birodalmába! Tapasztald meg a <strong>ropogós külső</strong>t és a <strong>puha belső</strong>t, amelyeket csak a KFC tud nyújtani. KFC - Az igazi ízek mestere!</p>
+
+        <img src="images/menu.png" alt="menu">
+
+        <div>
+            <h2>Kínálatunk</h2>
+            <table>
+                <tr>
+                    <td>Ajánlat</td>
+                    <td>Leírás</td>
+                    <td>Ár&nbsp;(Ft)</td>
+                    <td>Kép</td>
+                </tr>
+                <tr>
+                    <td>2024&nbsp;Kosár</td>
+                    <td>20 Strips pikáns csirkemell-csík és 24 Hot Wings csípős csirkeszárny</td>
+                    <td>8990</td>
+                    <td><img src="images/ajanlatok/2024.png" alt="2024"></td>
+                </tr>
+                <tr>
+                    <td>Classic&nbsp;Kosár</td>
+                    <td>2 darab Kentucky csirkerész, 4 darab csípős Hot Wings csirkeszárny, 4 darab csípős Strips csirkemell csík, 2 kis adag sültburgonya, 1 darab választható szósz.</td>
+                    <td>4840</td>
+                    <td><img src="images/ajanlatok/classic.png" alt="classic"></td>
+                </tr>
+                <tr>
+                    <td>Grander</td>
+                    <td>Friss, kézzel panírozott, szaftos csirkecombfilé egy nagy, szezámmagos zsemlében, baconnel, ízletes cheddar sajttal, lilahagymával, friss zöldsalátával és kétféle mártással: füstös BBQ-val és lágy majonézzel.</td>
+                    <td>2500</td>
+                    <td><img src="images/ajanlatok/grander.png" alt="grander"></td>
+                </tr>
+                <tr>
+                    <td>Zinger</td>
+                    <td>Méretes Hot & Spicy csirkemell filé, jégsaláta és majonéz egy szezámmagos zsemlében.</td>
+                    <td>2100</td>
+                    <td><img src="images/ajanlatok/zinger.png" alt="zinger"></td>
+                </tr>
+            </table>
+        </div>
+
+        <form>
+            <h2>Értékelj egy korábbi rendelést!</h2>
+
+            <label>Rendelés azonosítója:</label>
+            <input type="text" required placeholder="Pl.: 3c4c1028">
+            <br>
+
+            <label>Étel minősége:</label>
+            <br>
+            <span>1 </span>
+            <input type="range" value="8" min="1" max="10">
+            <span> 10</span>
+            <br>
+
+            <label>Milyennek tartod a szállítási időt?</label>
+            <br>
+            <input type="radio" id="lassu" name="szallitas" value="1">
+            <label for="lassu">Lassú</label>
+            <input type="radio" id="atlagos" name="szallitas" value="2" checked>
+            <label for="atlagos">Átlagos</label>
+            <input type="radio" id="gyors" name="szallitas" value="3">
+            <label for="gyors">Gyors</label>
+            <br>
+
+            <label>Hányszor rendeltél korábban tőlünk?</label>
+            <select>
+                <option>Egyszer</option>
+                <option>Néhányszor (2-5)</option>
+                <option selected>Gyakran (6-10)</option>
+                <option>Rendszeresen (10 felett)</option>
+            </select>
+            <br>
+            
+            <label>Egyéb megjegyzések:</label>
+            <br>
+            <br>
+            <textarea cols="30" rows="6"></textarea>
+            <br>
+            
+            <input type="submit">
+            <!-- <button>Küldés</button> -->
+        </form>
+    </main>
+
+    <footer>
+        © 2024 - A Kiemelten Fűszeres Csirke vállalat elhatárolódik a Kentucky Fried Chicken nevű étterem láncolattól!
+    </footer>
+</body>
+</html>
