@@ -1,0 +1,183 @@
+:root {
+    --piros: #e4002b;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    overflow: auto;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: var(--piros);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    max-width: 600px;
+    margin: auto;
+    background-color: darkred;
+    opacity: 80%;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 1em auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+textarea, select {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button, input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+strong {
+    color: var(--piros);
+}
+
+span, input, label {
+    vertical-align: middle;
+}
+
+br {
+    display: block;
+    content: "";
+    margin: 1em;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+table {
+    margin: auto;
+    max-width: 100%;
+    cursor: context-menu;
+}
+
+td {
+    padding: 0.5em;
+}
+
+td img {
+    width: 18em;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* ------------------- CSS feladatok -------------------- */
+
+/* F9 */
+body {
+    background: linear-gradient(darkred 25%, black 95%);
+}
+
+/* F10 */
+header h1 {
+    font-variant: small-caps;
+    text-shadow: -5px -4px 6px black;
+}
+
+/* F11 */
+input[type="submit"] {
+    border-radius: 20px 5px 5px 5px;
+}
+
+/* F12 */
+input[type="submit"]:hover {
+    background-color: var(--piros);
+    box-shadow: 0 0 12px black;
+}
+
+/* F13 */
+tr:first-child {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+/* F14 */
+tr:not(:first-child):hover {
+    background-color: rgba(0, 255, 0, 10%);
+}
+
+/* F15 */
+td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+/* F16 */
+input[type="text"] {
+    padding: 0.5em;
+}
+
+/* F17 */
+input[type="radio"] + label {
+    margin-right: 1em;
+}
+
+/* F18 */
+p + img {
+    height: 15em;
+}
+
+/* F19 */
+@media (max-width: 800px) {
+    table {
+        width: 400px;
+    }
+
+    td:last-child {
+        width: 20%;
+    }
+
+    td:nth-child(2) {
+        display: none;
+    }
+
+    select {
+        display: block;
+        margin: 1em auto;
+    }
+}
