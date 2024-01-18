@@ -164,4 +164,21 @@ p + img {
 }
 
 /* F19 */
+@media (max-width: 800px) {
+    table {
+        width: 400px;
+    }
 
+    td:last-child {
+        width: 20%;
+    }
+
+    td:nth-child(2) {
+        display: none;
+    }
+
+    select {
+        display: block;
+        margin: 1em auto;
+    }
+}
