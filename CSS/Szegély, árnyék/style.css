@@ -18,8 +18,6 @@ h1 {
     text-align: center;
     padding: 1rem;
     font-size: 3em;
-    background-image: url(images/disney_background.jpg);
-    background-position: center;
 }
 
 img {
@@ -117,8 +115,35 @@ div:has(p) {
 Form elemek
 ---------------------------------------------  
 */
+/* circle at right top */
+/* circle at x% y% */
+/* A kör középpontját megadjuk az elemhez képest */
+form {
+    background-image: radial-gradient(circle at 100% 0%, gold 10%, white 25%);
+    box-shadow: inset 0 0 15px 5px black;
+    border-radius: 4em 8em 2em 2em;
+}
 
+label:has(input[type="radio"]) {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1em;
+    display: inline-block;
+}
 
+label:has(input[type="radio"]:not(:checked)):hover {
+    background-color: peachpuff;
+    cursor: pointer;
+}
+
+label:has(input[type="checkbox"]:checked)::before {
+    content: "✔";
+    color: green;
+}
+
+input[type="checkbox"]:checked {
+    display: none;
+}
 
 /* 
 --------------------------------------------- 
@@ -126,4 +151,23 @@ Form elemek
 ---------------------------------------------  
 */
 
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    */
+    z-index: -1;
+    background-image: url(images/disney_background.jpg);
+    background-position: center;
+    opacity: 60%;
+}
 
