@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+div {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 1em;
+    display: inline-block;
+}
+
+h2 {
+    margin: 1em auto;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 1em auto;
+}
+
+img {
+    display: block;
+    margin: 1em;
+    width: 300px;
+    border: 4px solid black;
+    background-color: beige;
+    padding: 1em;
+}
+
+/* ------------------------------ */
+
+/* Forgatás */
+/* rotate */
+/* Pozitív forg. irány: jobbra */
+#d1 {
+    transform: rotate(380deg);
+}
+
+/* balra */
+/* -0.1turn => -36deg */
+/* 0.5turn => 180deg */
+#d2:hover {
+    transform: rotate(-0.1turn);
+    /* background-color: bisque;
+    width: 50px;
+    transition: transform 1s, width 1s; */
+    transition: transform 1s;
+}
+
+#d2:not(:hover) {
+    transform: rotate(0deg);
+    /* background-color: white;
+    width: 100px;
+    transition: transform 0.25s, width 1s; */
+    transition: transform 0.25s;
+}
+
+#d3:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+#d3:not(:hover) {
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+/* Nagyítás */
+#d4 {
+    transform: scale(0.25);
+}
+
+#d5:hover {
+    transform: scale(1.5);
+    /* z-index: -1;
+    position: relative; */
+    transition: transform 1s;
+}
+
+#d5:not(:hover) {
+    /* transform: scale(1); */
+    transition: transform 1s;
+}
+
+/* 0.1 => 10% */
+#d6:hover {
+    transform: scaleX(10%);
+    transition: transform 1s;
+}
+
+#d6:not(:hover) {
+    transition: transform 1s;
+}
+
+/* Eltolás */
+/* (x, y) */
+#d7:hover {
+    transform: translate(10px, 10px);
+    /* position: relative;
+    left: 10px; */
+    transition: transform 1s;
+}
+
+#d7:not(:hover) {
+    /* left: 0px; */
+    transition: transform 1s;
+}
+
+#d8:hover {
+    transform: translate(20px, -1em);
+    transition: transform 1s;
+}
+
+#d8:not(:hover) {
+    transition: transform 1s;
+}
+
+#d9:hover {
+    transform: translate(100%, 50%);
+    transition: transform 1s;
+}
+
+#d9:not(:hover) {
+    transition: transform 1s;
+}
+
+/* Középre igazítás! */
+/* Függőleges! */
+#kozepre {
+    position: relative;
+}
+
+a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ferdítés */
+#d10 {
+    border: 1px dashed black;
+}
+
+/* skewX, skewY */
+#d10:hover {
+    transform: skew(-30deg);
+    transition: transform 1s;
+}
+
+#d10:not(:hover) {
+    transition: transform 1s;
+}
+
+#d11:hover {
+    transform: skew(-20deg, -30deg);
+    transition: transform 1s;
+}
+
+#d11:not(:hover) {
+    transition: transform 1s;
+}
+
+/* Középpont helye? */
+#d12:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+    transform-origin: top center;
+}
+
+#d12:not(:hover) {
+    transition: transform 1s;
+}
+
+#d13:hover {
+    transform: rotate(-90deg);
+    transition: transform 1s;
+    transform-origin: right top;
+}
+
+#d13:not(:hover) {
+    transition: transform 1s;
+    transform-origin: right top;
+}
