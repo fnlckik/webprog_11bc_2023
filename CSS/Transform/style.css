@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+div {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 1em;
+    display: inline-block;
+}
+
+h2 {
+    margin: 1em auto;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 1em auto;
+}
+
+img {
+    display: block;
+    margin: 1em;
+    width: 300px;
+    border: 4px solid black;
+    background-color: beige;
+    padding: 1em;
+}
+
+/* ------------------------------ */
+
+/* Forgatás */
+#d1 {
+    border-radius: 20px 0 0 0;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+#d1:hover {
+    transform: rotate(30deg);
+    transition: transform 1s;
+}
+
+#d1:not(:hover) {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+
+
+/* Nagyítás */
+
+
+/* Eltolás */
+
+
+
+/* Középre igazítás! */
+
+
+
+/* Ferdítés */
+
+
+
+/* Középpont helye? */
+
