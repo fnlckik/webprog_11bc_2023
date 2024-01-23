@@ -180,13 +180,14 @@ a {
     transition: transform 1s;
 }
 
+/* transform-origin: x y; */
 #d13:hover {
     transform: rotate(-90deg);
     transition: transform 1s;
-    transform-origin: right top;
+    transform-origin: 100% 100%;
 }
 
 #d13:not(:hover) {
     transition: transform 1s;
-    transform-origin: right top;
+    transform-origin: 100% 100%;
 }
