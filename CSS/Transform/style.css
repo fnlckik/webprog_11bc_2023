@@ -40,32 +40,95 @@ img {
 /* Forgatás */
 #d1 {
     border-radius: 20px 0 0 0;
-    transform: rotate(0deg);
-    transition: transform 1s;
+    transform: rotate(360deg);
+    transition: transform 5s;
 }
 
 #d1:hover {
     transform: rotate(30deg);
+    /* transition: transform 1s; */
+    animation: forog 1s linear;
+}
+
+@keyframes forog {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+/* #d1:not(:hover) {
+    transform: rotate(0deg);
+    transition: transform 1s;
+} */
+
+/* -0.1turn => -36deg */
+#d2:hover {
+    transform: rotate(-0.1turn);
     transition: transform 1s;
 }
 
-#d1:not(:hover) {
-    transform: rotate(360deg);
-    transition: transform 1s;
+#d3 {
+    transform: rotate(0deg);
+    transition: transform 1s, color 0.75s;
 }
 
-
+#d3:hover {
+    color: rgba(0, 0, 0, 0);
+    transform: rotateY(180deg) rotateX(180deg);
+    transition: transform 1s, color 0.25s;
+}
 
 /* Nagyítás */
+/* scale */
+#d4:hover {
+    transform: scale(0.5);
+    transition: transform 1s;
+}
 
+#d5:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+#d6:hover {
+    transform: scaleX(0.25);
+    transition: transform 1s;
+}
 
 /* Eltolás */
+/* translate */
+#d7:hover {
+    transform: translate(10px, 30px);
+    transition: transform 1s;
+}
 
+#d8:hover {
+    transform: translate(1em, -20px);
+    transition: transform 1s;
+}
+
+/* %: alakzat méretéhez képest */
+#d9:hover {
+    transform: translate(100%, 25%);
+    transition: transform 1s;
+}
 
 
 /* Középre igazítás! */
+#kozepre {
+    /* position: relative; */
+    height: 400px;
+}
 
-
+a {
+    /* position: absolute;
+    inset: 0; */
+    display: inline-block;
+    transform: translateY(50%);
+}
 
 /* Ferdítés */
 
