@@ -15,7 +15,7 @@ body>div {
     margin-top: 20px;
 }
 
-body div div div {
+.elem {
     background-color: #3498db;
     color: #ffffff;
     width: 100px;
@@ -40,15 +40,53 @@ hr {
 
 /* 1. Dinamikus méret */
 
+/* .elem {
+    display: inline-block;
+} */
+
+/* gap: rés, kihagyás, hézag */
+/* gap: calc(100% / 9); */
+.flexbox {
+    display: flex;
+}
+
+.b1 {
+    gap: 3px;
+}
 
 /* 2. "Vízszintes" igazítás */
-
+/* center */
+/* start, end ~ flex-start, flex-end */
+/* space-between: szélsők két oldalra, egyenlő kihagyások */
+/* space-around */
+/* space-evenly */
+.b2 {
+    justify-content: space-evenly;
+}
 
 /* 3. "Függőleges" igazítás */
+/* start, center, end */
+.b3 {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
 
+/* .b3 .elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 /* 4. Igazítás iránya */
-
+/* row, row-reverse */
+/* column, column-reverse */
+.b4 {
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* 5. Tördelés */
 
