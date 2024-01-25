@@ -89,22 +89,63 @@ hr {
 }
 
 /* 5. Tördelés */
-
+/* nowrap, wrap */
+/* wrap-reverse */
+.b5 {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 
 /* --------------- Elemek --------------- */
 
 /* 6. Elemek sorrendje */
+.b6 .e2 {
+    order: 1;
+}
 
+.b6 .e3 {
+    order: 2;
+}
+
+.b6 .e1 {
+    order: 3;
+}
 
 /* 7. Elemek igazítása */
 /* Elem magasságok is flexibilisek! */
+.b7 {
+    height: 400px;
+}
+
+/* start, center, end, stretch */
+.b7 .elem {
+    height: auto;
+    align-self: start;
+}
+
+.b7 .e3 {
+    align-self: stretch;
+}
+
+.b7 .e6 {
+    align-self: center;
+}
 
 
 /* 8. Nyújtás */
 /* 1:2, maradék */
-.b8 div {
+.b8 .elem {
     border: 2px solid black;
+}
+
+/* A kimaradó rész mekkora szeletét kapja meg? */
+.b8 .e1 {
+    flex-grow: 1;
+}
+
+.b8 .e2 {
+    flex-grow: 2;
 }
 
 
@@ -115,6 +156,20 @@ hr {
     border: 2px solid black;
 }
 
+/* Nem engedünk a 200px-ből! */
+.b9 .e1 {
+    flex-shrink: 0;
+}
+
+.b9 .e2 {
+    flex-shrink: 1;
+}
+
+.b9 .e3 {
+    /* flex-shrink: 20; */
+    flex-shrink: 2;
+}
+
 
 /* 10. Alapméret */
 /* Miben másabb a width-nél? */
@@ -122,3 +177,14 @@ hr {
     border: 2px solid black;
 }
 
+.b10 {
+    flex-direction: column;
+}
+
+.b10 .e1 {
+    flex-basis: 200px;
+    /* width: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
