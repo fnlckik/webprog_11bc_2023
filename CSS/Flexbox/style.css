@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body>div {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.elem {
+    background-color: #3498db;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* Igazítás */
+    line-height: 100px;
+    text-align: center;
+}
+
+.flexbox {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+hr {
+    border: 5px solid black;
+}
+
+/* -------------- Flexbox -------------- */
+
+/* 1. Dinamikus méret */
+/* .elem {
+    display: inline-block;
+} */
+
+/* gap: rés, hézag */
+.flexbox {
+    display: flex;
+    gap: calc(100% / 9);
+}
+
+/* .elem:not(:last-child) {
+    margin-right: calc(100% / 9);
+} */
+
+/* 2. "Vízszintes" igazítás */
+
+
+/* 3. "Függőleges" igazítás */
+
+
+/* 4. Igazítás iránya */
+
+
+/* 5. Tördelés */
+
+
+
+/* --------------- Elemek --------------- */
+
+/* 6. Elemek sorrendje */
+
+
+/* 7. Elemek igazítása */
+/* Elem magasságok is flexibilisek! */
+
+
+/* 8. Nyújtás */
+/* 1:2, maradék */
+.b8 div {
+    border: 2px solid black;
+}
+
+
+/* 9. Zsugorítás */
+/* Nem zsugorodik, 1:2 arányban */
+.b9 div {
+    width: 200px;
+    border: 2px solid black;
+}
+
+
+/* 10. Alapméret */
+/* Miben másabb a width-nél? */
+.b10 div {
+    border: 2px solid black;
+}
+
