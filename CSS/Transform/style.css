@@ -119,20 +119,43 @@ img {
 
 /* Középre igazítás! */
 #kozepre {
-    /* position: relative; */
     height: 400px;
+    position: relative;
 }
 
 a {
-    /* position: absolute;
-    inset: 0; */
-    display: inline-block;
-    transform: translateY(50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Ferdítés */
+/* a:hover {
+    transform: translate(-50%, -50%);
+    transition: transform 2s;
+} */
 
+/* Ferdítés */
+#d10:hover {
+    transform: skewY(-30deg);
+    transition: transform 1s;
+}
+
+#d11:hover {
+    transform: skew(-20deg, -30deg) rotate(30deg);
+    transition: transform 1s;
+}
 
 
 /* Középpont helye? */
+#d12:hover {
+    transform: scale(0.5);
+    transform-origin: right top;
+    transition: transform 1s;
+}
 
+#d13:hover {
+    transform: rotate(90deg);
+    transform-origin: -25% -25%;
+    transition: transform 1s;
+}
