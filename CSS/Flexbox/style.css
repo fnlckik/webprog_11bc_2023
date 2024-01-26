@@ -132,6 +132,14 @@ hr {
     border: 2px solid black;
 }
 
+.b8 .e1 {
+    flex-grow: 1;
+}
+
+.b8 .e2 {
+    flex-grow: 2;
+}
+
 
 /* 9. Zsugorítás */
 /* Nem zsugorodik, 1:2 arányban */
@@ -140,6 +148,17 @@ hr {
     border: 2px solid black;
 }
 
+.b9 .e1 {
+    flex-shrink: 1;
+}
+
+.b9 .e2 {
+    flex-shrink: 5;
+}
+
+.b9 .e3 {
+    flex-shrink: 0;
+}
 
 /* 10. Alapméret */
 /* Miben másabb a width-nél? */
@@ -147,3 +166,20 @@ hr {
     border: 2px solid black;
 }
 
+.b10 {
+    flex-direction: column;
+}
+
+.b10 .e1 {
+    flex-basis: 200px;
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex-grow, flex-shrink, flex-basis */
+/* flex: 1 0 200px */
+
+/* flex-direction, flex-wrap */
+/* flex-flow: column wrap */
