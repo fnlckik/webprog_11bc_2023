@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+}
+
+header, footer {
+    background-color: lightgoldenrodyellow;
+}
+
+header p, footer {
+    padding: 1em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+strong {
+    color: darkred;
+}
+
+.keress {
+    font-weight: bold;
+    padding: 1em;
+    color: white;
+    background-color: black;
+}
+
+#hirdetes {
+    background-color: lightgray;
+    margin: 1em auto;
+}
+
+.kartya * {
+    margin: 1em auto;
+}
+
+.kartya p {
+    text-align: center;
+}
+
+.kartya ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1em;
+}
+
+.kerjen-ajanlatot {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.kerjen-ajanlatot:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kartya {
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    line-height: 2em;
+}
+
+#szoveg p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Menü (header) */
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li {
+    /* background-color: yellow; */
+    /* border: 2px solid; */
+    flex-grow: 1;
+    display: flex;
+}
+
+nav a {
+    /* background-color: red; */
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Fő tartalmi rész (main) */
+/* "Hirdetés" magassága: 60vh */
+/* Kép: fent középre pozícionálva takar */
+/* Kép szélessége 200px, nem csökkenhet */
+/* Kimaradó részt a szöveg tölti ki! */
+#hirdetes {
+    height: 60vh;
+    display: flex;
+}
+
+#szoveg {
+    background-color: yellow;
+}
+
+#kep {
+    background-image: url(epitesz.jpg);
+    width: 200px;
+}
+
+/* Linkekre rámutatva sötétebb háttér */
+/* 10%-os fekete */
+
+
+/* Aláhúzás (linkek) */
+/* Magassága: 2px fekete vonal */
+/* Vigyázat: linkeken 1em padding van! */
+/* Megjelenés: 0.5s */
+/* Balról jobbra jön és megy */
+
+
+/* "Bármit megvalósítunk" */
+/* 75%-ról 1.5-es növekedés */
+
+
+/* Keress felirat */
+/* kerek sarkok + mutató kurzor + shadow rámutatáskor 0.25s */
+/* forgás az előző nagyítása után 1s */
+
+
+/* Ajánlatok - kártyák */
+/* Kihagyás köztük: 2em */
+/* Kártya alapméret: 250px */
+
+
+/* Minimális reszponzivitás 552px-nél */
+/* Ne legyenek menü aláhúzások! */
+/* A nagyított szöveg csak 120% legyen! */
+
