@@ -127,6 +127,10 @@ nav a {
     text-align: center;
 }
 
+nav li:first-child {
+    order: 1;
+}
+
 /* Fő tartalmi rész (main) */
 /* "Hirdetés" magassága: 60vh */
 /* Kép: fent középre pozícionálva takar */
@@ -135,15 +139,29 @@ nav a {
 #hirdetes {
     height: 60vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+/* #hirdetes div {
+    border: 5px solid black;
+} */
 
 #szoveg {
     background-color: yellow;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #kep {
     background-image: url(epitesz.jpg);
-    width: 200px;
+    background-size: cover;
+    background-position: center top;
+    flex-basis: 200px;
+    flex-shrink: 0;
 }
 
 /* Linkekre rámutatva sötétebb háttér */
