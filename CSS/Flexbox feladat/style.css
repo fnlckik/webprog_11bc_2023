@@ -148,7 +148,7 @@ nav li:first-child {
 } */
 
 #szoveg {
-    background-color: yellow;
+    /* background-color: yellow; */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -166,14 +166,41 @@ nav li:first-child {
 
 /* Linkekre rámutatva sötétebb háttér */
 /* 10%-os fekete */
+a {
+    background-color: lightgoldenrodyellow;
+    transition: 0.5s;
+}
 
+a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
 
 /* Aláhúzás (linkek) */
 /* Magassága: 2px fekete vonal */
 /* Vigyázat: linkeken 1em padding van! */
 /* Megjelenés: 0.5s */
 /* Balról jobbra jön és megy */
+a {
+    position: relative;
+}
 
+a::after {
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+a:hover::after {
+    transform: scaleX(100%);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
 
 /* "Bármit megvalósítunk" */
 /* 75%-ról 1.5-es növekedés */
