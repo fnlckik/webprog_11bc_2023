@@ -204,19 +204,55 @@ a:hover::after {
 
 /* "Bármit megvalósítunk" */
 /* 75%-ról 1.5-es növekedés */
+#szoveg p {
+    font-size: 0.75em;
+    transition: 0.5s;
+}
 
+#szoveg:hover p {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
 
 /* Keress felirat */
 /* kerek sarkok + mutató kurzor + shadow rámutatáskor 0.25s */
 /* forgás az előző nagyítása után 1s */
+#szoveg:hover .keress {
+    transform: rotate(360deg);
+    transition: transform 1s 0.5s;
+}
 
+.keress:hover {
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: 0 0 20px yellow;
+    /* transition: border-radius 0.25s; */
+}
 
 /* Ajánlatok - kártyák */
 /* Kihagyás köztük: 2em */
 /* Kártya alapméret: 250px */
+#ajanlatok {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
 
+.kartya {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
 
 /* Minimális reszponzivitás 552px-nél */
 /* Ne legyenek menü aláhúzások! */
 /* A nagyított szöveg csak 120% legyen! */
+@media (max-width: 552px) {
+    a::after {
+        display: none;
+    }
 
+    #szoveg:hover p {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+    }
+}
