@@ -73,16 +73,92 @@ footer {
 
 /* 2. Jobbra-balra közlekedő dobozok */
 /* Mozogjanak 500 pixelt, 3 mp alatt, fél mp késve indulva, 3-szor */
+.jobbra-balra {
+    /* animation-name: jobbra-balra;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-delay: 0.5s; */
+    animation: jobbra-balra 3s 0.5s 3;
+}
 
+/* állandó sebesség */
+#d0 {
+    animation-timing-function: linear;
+}
 
+/* Alapértelmezett */
+#d1 {
+    animation-timing-function: ease;
+}
 
+/* folyamatosan gyorsulo */
+#d2 {
+    animation-timing-function: ease-in;
+}
+
+/* folyamatosan lassulo */
+#d3 {
+    animation-timing-function: ease-out;
+}
+
+#d4 {
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes jobbra-balra {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+} */
+
+@keyframes jobbra-balra {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+}
 
 /* 3. Remegő gomb */
 /* 5 fok mértékben remegjen, egy mozdulatsor negyed mp */
 /* Álljon meg ha rámutatunk */
+.remeg {
+    animation: remego-gomb infinite 0.25s;
+}
 
+/* @keyframes remego-gomb {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+} */
 
-
+@keyframes remego-gomb {
+    0%, 100% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
 
 /* 4. Töltés */
 /* 10px vastagságú legyen a körgyűrű */
