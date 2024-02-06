@@ -188,25 +188,7 @@ a {
 left: 1em;
 right: 1em;
 bottom: calc(1em - 2px); */
-a::after {
-    content: "";
-    height: 2px;
-    background-color: black;
-    width: 100%;
-    display: block;
-    transform: scaleX(0);
-    /* transform-origin: 100%; */
-    transform-origin: right;
-    transition: transform 0.5s;
-}
 
-a:hover::after {
-    /* text-decoration: 2px solid underline black; */
-    transform: scaleX(100%);
-    /* transform-origin: 0%; */
-    transform-origin: left;
-    transition: transform 0.5s;
-}
 
 /* "Bármit megvalósítunk" */
 /* 75%-ról 1.5-es növekedés */
@@ -250,9 +232,60 @@ a:hover::after {
 /* Ajánlatok - kártyák */
 /* Kihagyás köztük: 2em */
 /* Kártya alapméret: 250px */
+#ajanlatok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
 
+.kartya {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
 
 /* Minimális reszponzivitás 552px-nél */
 /* Ne legyenek menü aláhúzások! */
 /* A nagyított szöveg csak 120% legyen! */
 
+/*
+@media (max-width: 552px) {
+    a::after {
+        background-color: rgba(0, 0, 0, 0);
+        /* display: none;
+        /* height: 0;
+    }
+}
+*/
+
+@media (max-width: 552px) {
+    #szoveg {
+        flex-basis: 200px;
+    }
+
+    #szoveg:hover p {
+        transform: scale(1.2);
+    }
+}
+
+/* Mobile-first elv */
+@media (min-width: 552px) {
+    a::after {
+        content: "";
+        height: 2px;
+        background-color: black;
+        width: 100%;
+        display: block;
+        transform: scaleX(0);
+        /* transform-origin: 100%; */
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+    
+    a:hover::after {
+        /* text-decoration: 2px solid underline black; */
+        transform: scaleX(100%);
+        /* transform-origin: 0%; */
+        transform-origin: left;
+        transition: transform 0.5s;
+    }
+}
