@@ -1,0 +1,87 @@
+div div {
+    height: 50px;
+    width: 100px;
+    background-color: lightgray;
+}
+
+div.megjelenes {
+    background-color: darkgreen;
+}
+
+div.jobbra-balra {
+    margin: 1em 0;
+    background-color: yellow;
+}
+
+button.remeg {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.t2:first-of-type {
+    margin-left: 10vw;
+}
+
+.t2 {
+    background-color: darkgray;
+}
+
+.forgo {
+    width: fit-content;
+    height: auto;
+    border: 2px solid black;
+    background-color: white;
+}
+
+img {
+    height: 300px;
+    display: block; 
+    margin: auto;
+}
+
+footer {
+    height: 10vw;
+}
+
+/* ------------------------------------------ */
+
+/* 1. Megjelenő doboz */
+/* Legyen látható 3 másodperc alatt! */
+
+
+
+
+/* 2. Jobbra-balra közlekedő dobozok */
+/* Mozogjanak 500 pixelt, 3 mp alatt, fél mp késve indulva, 3-szor */
+
+
+
+
+/* 3. Remegő gomb */
+/* 5 fok mértékben remegjen, egy mozdulatsor negyed mp */
+/* Álljon meg ha rámutatunk */
+
+
+
+
+/* 4. Töltés */
+/* 10px vastagságú legyen a körgyűrű */
+/* Egy fordulat 4 mp */
+
+
+
+
+/* 5. Töltés (pontok) */
+/* Pontok mérete: 10px */
+/* Pontok várakozása: idők harmadai */
+
+
+
+
+/* 6. Forgó */
+/* Forgó magassága 300px */
+/* Mindegyik kép ugyanannyi ideig látszik: animáció 20%-a */
+
+
+
