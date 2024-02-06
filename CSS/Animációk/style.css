@@ -48,9 +48,31 @@ footer {
 
 /* 1. Megjelenő doboz */
 /* Legyen látható 3 másodperc alatt! */
+/* .megjelenes {
+    opacity: 0%;
+    transition: opacity 1s;
+}
 
+div:first-of-type h2:hover + .megjelenes{
+    opacity: 100%;
+    transition: opacity 1s;
+} */
 
+/* name, duration */
+.megjelenes {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    /* animation: fade-in 3s; */
+}
 
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 
 /* 2. Jobbra-balra közlekedő dobozok */
 /* Mozogjanak 500 pixelt, 3 mp alatt, fél mp késve indulva, 3-szor */
