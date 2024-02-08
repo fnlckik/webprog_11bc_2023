@@ -105,6 +105,10 @@ footer {
     animation-timing-function: ease-in-out;
 }
 
+/* #d3:hover {
+    animation-play-state: paused;
+} */
+
 /* @keyframes jobbra-balra {
     0% {
         transform: translateX(0px);
@@ -131,6 +135,10 @@ footer {
 /* Álljon meg ha rámutatunk */
 .remeg {
     animation: remego-gomb infinite 0.25s;
+}
+
+.remeg:hover {
+    animation-play-state: paused;
 }
 
 /* @keyframes remego-gomb {
@@ -163,15 +171,56 @@ footer {
 /* 4. Töltés */
 /* 10px vastagságú legyen a körgyűrű */
 /* Egy fordulat 4 mp */
+.toltes {
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-top: 10px solid lightgreen;
+    animation: toltes 4s infinite ease-out;
+}
 
-
+@keyframes toltes {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 /* 5. Töltés (pontok) */
 /* Pontok mérete: 10px */
 /* Pontok várakozása: idők harmadai */
+.t2-szulo {
+    display: flex;
+    gap: 0.25em;
+    background-color: white;
+}
 
+.t2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: pontok 1.5s infinite;
+}
 
+.t2:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.t2:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes pontok {
+    0%, 100% {
+        transform: scale(1) translateY(0%);
+    }
+    25% {
+        transform: scale(1.2) translateY(-50%);
+    }
+}
 
 
 /* 6. Forgó */
