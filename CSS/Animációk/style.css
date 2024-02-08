@@ -76,15 +76,63 @@ div:first-of-type h2:hover + .megjelenes{
 
 /* 2. Jobbra-balra közlekedő dobozok */
 /* Mozogjanak 500 pixelt, 3 mp alatt, fél mp késve indulva, 3-szor */
+.jobbra-balra {
+    position: relative;
+    animation: mozgo 3s 3;
+    /* animation: mozgo 3s alternate 6; */
+    /* animation-iteration-count: 2;
+    animation-direction: alternate; */
+}
 
+/* 
+60% {
+    left: 0;
+} */
+@keyframes mozgo {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+}
 
+#d0 {
+    animation-timing-function: linear;
+}
 
+/* Alapértelmezett */
+#d1 {
+    animation-timing-function: ease;
+}
+
+#d2{
+    animation-timing-function: ease-in;
+}
+
+#d3{
+    animation-timing-function: ease-out;
+}
+
+#d4 {
+    animation-timing-function: ease-in-out;
+}
 
 /* 3. Remegő gomb */
 /* 5 fok mértékben remegjen, egy mozdulatsor negyed mp */
 /* Álljon meg ha rámutatunk */
+.remeg {
+    animation: rezges 0.25s infinite;
+}
 
-
+@keyframes rezges {
+    0%, 100% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
 
 
 /* 4. Töltés */
