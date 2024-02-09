@@ -1,0 +1,116 @@
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin: 2em auto;
+}
+
+img {
+    width: 100px;
+}
+
+.mentok {
+    background-color: aliceblue;
+    border: 1px solid black;
+    min-width: fit-content;
+    width: 250px;
+    height: 150px;
+}
+
+.mentok p {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Impact;
+    color: darkred;
+    text-shadow: 1px 1px gray;
+}
+
+.farsang div {
+    width: 200px;
+    border: 2px solid black;
+    /* padding: 1em; */
+    cursor: pointer;
+}
+
+.farsang p {
+    text-align: center;
+}
+
+.farsang img {
+    opacity: 60%;
+    width: 100%;
+}
+
+.farsang div {
+    position: relative;
+}
+
+.farsang span {
+    position: absolute;
+    font-size: 2em;
+    left: 5%;
+    top: 5%;
+}
+
+/* ------------------------------------- */
+
+/* F1 */
+.mentok {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mentok img {
+    animation: sziv_dobbannas 1.5s infinite;
+}
+
+@keyframes sziv_dobbannas {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* .mentok p {
+    opacity: 0;
+    animation: elotunes 1.5s 1.5s forwards;
+}
+
+@keyframes elotunes {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+} */
+
+.mentok p {
+    animation: elotunes 3s;
+}
+
+@keyframes elotunes {
+    0%, 50% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+
+/* F2 */
+
+
+
