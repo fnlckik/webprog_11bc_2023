@@ -19,9 +19,9 @@ button.remeg {
     font-size: 1.5em;
 }
 
-.t2:first-of-type {
+/* .t2:first-of-type {
     margin-left: 10vw;
-}
+} */
 
 .t2 {
     background-color: darkgray;
@@ -194,6 +194,9 @@ footer {
 /* Pontok várakozása: idők harmadai */
 .t2-szulo {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     gap: 0.25em;
     background-color: white;
 }
@@ -201,6 +204,7 @@ footer {
 .t2 {
     width: 10px;
     height: 10px;
+    flex-shrink: 0;
     border-radius: 50%;
     animation: pontok 1.5s infinite;
 }
@@ -226,6 +230,23 @@ footer {
 /* 6. Forgó */
 /* Forgó magassága 300px */
 /* Mindegyik kép ugyanannyi ideig látszik: animáció 20%-a */
+.forgo {
+    height: 300px;
+    overflow: hidden;
+}
 
+.forgo img {
+    animation: gyumi 5s infinite;
+}
 
-
+@keyframes gyumi {
+    0%, 10%, 90%, 100% {
+        transform: translateY(0);
+    }
+    20%, 30%, 70%, 80% {
+        transform: translateY(-300px);
+    }
+    40%, 60% {
+        transform: translateY(-600px);
+    }
+}
