@@ -6,8 +6,8 @@
 }
 
 .grid div {
-    height: 50px;
-    width: 80px;
+    /* height: 50px;
+    width: 80px; */
     border: 1px solid black;
     box-sizing: border-box;
     font-weight: bold;
@@ -49,10 +49,23 @@ hr {
 /* 1. Sorok, oszlopok */
 /* Sorok magassága: 50px */
 /* Oszlopok szélessége: 80-110-50-80*/
+.grid {
+    display: grid;
+}
 
+#d1 .grid {
+    grid-template-columns: 80px 110px 50px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
 
-
-
+#d1 .red {
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* grid-row-start: 6;
+    grid-row-end: 7; */
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+}
 
 /* 2. Rövidítések (shorthand property) */
 /* Sorok: 50px */
