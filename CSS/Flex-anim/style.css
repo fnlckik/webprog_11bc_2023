@@ -67,14 +67,11 @@ img {
 }
 
 @keyframes sziv_dobbannas {
-    0% {
+    0%, 100% {
         transform: scale(1);
     }
     25% {
         transform: scale(1.25);
-    }
-    100% {
-        transform: scale(1);
     }
 }
 
@@ -86,7 +83,7 @@ img {
 @keyframes elotunes {
     0% {
         opacity: 0%;
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
     100% {
         opacity: 100%;
@@ -101,7 +98,7 @@ img {
 @keyframes elotunes {
     0%, 50% {
         opacity: 0%;
-        transform: translateY(100%);
+        transform: translateY(50%);
     }
     100% {
         opacity: 100%;
@@ -111,6 +108,27 @@ img {
 
 
 /* F2 */
+.farsang {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
 
+.farsang div {
+    flex-grow: 1;
+    transition: box-shadow 0.5s;
+}
 
+.farsang div:hover {
+    box-shadow: 0 0 25px gray;
+    transition: box-shadow 0.5s;
+}
 
+.farsang div span {
+    transition: transform 0.5s;
+}
+
+.farsang div:hover span {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
