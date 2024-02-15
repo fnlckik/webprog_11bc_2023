@@ -67,6 +67,23 @@ hr {
     grid-row: 6 / 7;
 }
 
+#d1 .green {
+    /* grid-row: 3 / 5;
+    grid-column: 1 / 4; */
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 3;
+}
+
+/* grid-area: BF(r, c) JA(r, c) */
+/* grid-area: bf_sor / bf_oszlop / ja_sor / ja_oszlop */
+#d1 .yellow {
+    /* grid-column: 4 / 5;
+    grid-row: 1 / 6; */
+    /* grid-column: 4 / span 1;
+    grid-row: 1 / span 5; */
+    grid-area: 1 / 4 / 6 / 5;
+}
+
 /* 2. Rövidítések (shorthand property) */
 /* Sorok: 50px */
 /* Oszlopok: 80px */
