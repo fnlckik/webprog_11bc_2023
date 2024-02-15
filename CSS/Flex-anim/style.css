@@ -1,0 +1,126 @@
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin: 2em auto;
+}
+
+img {
+    width: 100px;
+}
+
+.mentok {
+    background-color: aliceblue;
+    border: 1px solid black;
+    min-width: fit-content;
+    width: 250px;
+    height: 150px;
+}
+
+.mentok p {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Impact;
+    color: darkred;
+    text-shadow: 1px 1px gray;
+}
+
+.farsang div {
+    width: 200px;
+    border: 2px solid black;
+    /* padding: 1em; */
+    cursor: pointer;
+}
+
+.farsang p {
+    text-align: center;
+}
+
+.farsang img {
+    opacity: 60%;
+    width: 100%;
+}
+
+.farsang div {
+    position: relative;
+}
+
+.farsang span {
+    position: absolute;
+    font-size: 2em;
+    left: 5%;
+    top: 5%;
+}
+
+/* ------------------------------------- */
+
+/* F1 */
+.mentok {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mentok img {
+    animation: szivdobbanas 1.5s infinite;
+}
+
+@keyframes szivdobbanas {
+    0%, 100% {
+        transform: scale(100%);
+    }
+    25% {
+        transform: scale(125%);
+    }
+}
+
+/* megtartja a 100%-os keyframe-et */
+/* .mentok p {
+    opacity: 0%;
+    animation-fill-mode: forwards;
+    animation: elojoves;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s; 
+} */
+
+.mentok p {
+    animation: elojoves 3s;
+}
+
+@keyframes elojoves {
+    0%, 50% {
+        opacity: 0%;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+/* F2 */
+.farsang {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.farsang div {
+    flex-grow: 1;
+    transition: box-shadow 0.5s;
+}
+
+.farsang div:hover {
+    box-shadow: 0 0 25px gray;
+    transition: box-shadow 0.5s;
+}
+
+.farsang div span {
+    transition: transform 0.5s;
+}
+
+.farsang div:hover span{
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
