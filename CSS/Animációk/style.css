@@ -134,24 +134,82 @@ div:first-of-type h2:hover + .megjelenes{
     }
 }
 
+.remeg:hover {
+    animation-play-state: paused;
+}
 
 /* 4. Töltés */
 /* 10px vastagságú legyen a körgyűrű */
 /* Egy fordulat 4 mp */
+.toltes {
+    border: 10px solid white;
+    border-top: 10px solid lightgreen;
+    border-radius: 50%;
+    height: 100px;
+    animation: spin 4s infinite;
+}
 
-
-
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* 5. Töltés (pontok) */
 /* Pontok mérete: 10px */
 /* Pontok várakozása: idők harmadai */
+.t2 {
+    --ido: 1.5s;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: felnagy var(--ido) infinite;
+}
 
+.t2:nth-of-type(2) {
+    animation-delay: calc(var(--ido) / 3);
+}
 
+.t2:nth-of-type(3) {
+    animation-delay: calc(var(--ido) / 3 * 2);
+}
 
+@keyframes felnagy {
+    0%, 67% {
+        transform: scale(1) translateY(0);
+    }
+    33% {
+        transform: scale(1.25) translateY(-50%);
+    }
+}
 
 /* 6. Forgó */
 /* Forgó magassága 300px */
 /* Mindegyik kép ugyanannyi ideig látszik: animáció 20%-a */
+.forgo {
+    height: 300px;
+    overflow: hidden;
+}
 
+.forgo img {
+    animation: mozgas 5s infinite;
+}
 
-
+@keyframes mozgas {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    75% {
+        transforM: translateY(-100%);
+    }
+}
