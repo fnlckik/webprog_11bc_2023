@@ -81,23 +81,76 @@ hr {
     grid-row: 1 / 6; */
     /* grid-column: 4 / span 1;
     grid-row: 1 / span 5; */
+    /* grid-area: 1 / 4 / span 5 / span 1; */
     grid-area: 1 / 4 / 6 / 5;
 }
 
 /* 2. Rövidítések (shorthand property) */
 /* Sorok: 50px */
 /* Oszlopok: 80px */
+/* repeat(2, 80px) repeat(3, 20px) == 80px 80px 20px 20px 20px */
+#d2 .grid {
+    /* grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px; */
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 50px);
+}
 
+#d2 .blue {
+    /* grid-area: 4 / 2 / 6 / 5; */
+    grid-area: 4 / 2 / span 2 / span 3;
+    /* z-index: 1; */
+    order: 1;
+}
 
+#d2 .green {
+    /* grid-area: 2 / 1 / span 3 / span 2; */
+    grid-area: 2 / 1 / 5 / 3;
+}
 
+#d2 .gray {
+    /* grid-area: 2 / 4 / span 5 / span 1; */
+    grid-area: 2 / 4 / 7 / 5;
+    /* z-index: -1; */
+}
 
+#d2 .red {
+    /* grid-area: 1 / 1 / span 1 / span 2; */
+    grid-column: span 2;
+}
 
 /* 3. Elnevezések */
 /* Grid szélessége: 80% */
 /* 480px-re és kisebbekre átrendeződik! */
+#d3 .grid {
+    width: 80%;
+    grid-template-areas:
+        "header header header header"
+        "left main main right"
+        "left main main right"
+        "left main main right"
+        ". footer footer .";
+}
 
+#d3 .yellow {
+    grid-area: header;
+}
 
+#d3 .blue {
+    grid-area: left;
+}
 
+#d3 .red {
+    grid-area: main;
+}
+
+#d3 .green {
+    grid-area: right;
+}
+
+#d3 .gray {
+    grid-area: footer;
+}
 
 
 /* 4. Fractional unit (fr) */
