@@ -190,6 +190,9 @@ div:first-of-type h2:hover + .megjelenes{
 /* 6. Forgó */
 /* Forgó magassága 300px */
 /* Mindegyik kép ugyanannyi ideig látszik: animáció 20%-a */
+/* Összes gyümölcsidő: 3*20% = 60% */
+/* Marad váltásokra: 40% */
+/* => váltások közötti idő 10% darabonként */
 .forgo {
     height: 300px;
     overflow: hidden;
@@ -199,17 +202,41 @@ div:first-of-type h2:hover + .megjelenes{
     animation: mozgas 5s infinite;
 }
 
+/* alma: 0-20, => 20 */
+/* naracs: 30-40, 80-90 => 20 */
+/* citrom: 50-70 => 20 */
 @keyframes mozgas {
-    0%, 100% {
-        transform: translateY(0);
+    0%, 20%, 100% {
+        transform: translateY(0); 
     }
-    25% {
+    30%, 40% {
         transform: translateY(-100%);
     }
-    50% {
-        transform: translateY(-200%);
+    50%, 70% {
+        transform: translateY(-200%); 
     }
-    75% {
+    80%, 90% {
         transforM: translateY(-100%);
     }
 }
+
+
+/* alma: 0-10, 90-100 => 20 */
+/* naracs: 20-30, 70-80 => 20 */
+/* citrom: 40-60 => 20 */
+/*
+@keyframes mozgas {
+    0%, 10%, 90%, 100% {
+        transform: translateY(0); /* alma
+    }
+    20%, 30% {
+        transform: translateY(-100%); /* narancs
+    }
+    40%, 60% {
+        transform: translateY(-200%); /* citrom
+    }
+    70%, 80% {
+        transforM: translateY(-100%); /* narancs
+    }
+}
+*/
