@@ -1,0 +1,107 @@
+.grid {
+    border: 1px solid black;
+    margin: 2em auto;
+    width: 320px;
+    height: 300px;
+}
+
+.grid div {
+    height: 50px;
+    width: 80px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gray {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    height: 0.1em;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+}
+
+/* ---------------------------------- */
+
+/* 1. Sorok, oszlopok */
+/* Sorok magassága: 50px */
+/* Oszlopok szélessége: 80-110-50-80*/
+.grid {
+    display: grid;
+}
+
+
+
+
+/* 2. Rövidítések (shorthand property) */
+/* Sorok: 50px */
+/* Oszlopok: 80px */
+
+
+
+
+
+/* 3. Elnevezések */
+/* Grid szélessége: 80% */
+/* 480px-re és kisebbekre átrendeződik! */
+
+
+
+
+
+/* 4. Fractional unit (fr) */
+/* 3 rész, 7 egység */
+/* 2/7 1/7 4/7 arányban felosztva*/
+
+
+
+
+
+/* 5. Minmax */
+/* 3 egyenlő részre felosztva */
+/* A középső legalább 200px legyen! */
+
+
+
+
+
+/* 6. Repeat + Minmax + gap */
+/* Legalább 200px széles oszlopok */
+/* Flexibilis megjelenítés: annyi oszlop, ahány fér */
+/* 10px és 4px kihagyás */
+
+
+
+
+
+/* 7. Igazítások */
+/* Sorok: 3db, 25%-os */
+/* Oszlopok: 3db 30%-os */
+/* Belső div-ek mérete 50% mindkét irányban! */
+
+
+
+
