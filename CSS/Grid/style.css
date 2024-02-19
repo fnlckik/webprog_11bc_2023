@@ -152,19 +152,60 @@ hr {
     grid-area: footer;
 }
 
+@media (max-width: 480px) {
+    #d3 .grid {
+        grid-template-areas:
+            "header header"
+            "main main"
+            "main main"
+            "main main"
+            "left right"
+            "left right"
+            "footer footer";
+    }
+}
+
+@media (min-width: 1400px) {
+    #d3 .grid {
+        grid-template-areas:
+            "header main main main"
+            "left right footer footer";
+    }
+}
+
+#d3 .yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* 4. Fractional unit (fr) */
 /* 3 rész, 7 egység */
 /* 2/7 1/7 4/7 arányban felosztva*/
+/* 2:1:4 arányban osszuk fel */
+#d4 .grid {
+    width: 80%;
+    /* grid-template-columns: calc(100% / 7 * 2) calc(100% / 7 * 1) calc(100% / 7 * 4); */
+    grid-template-columns: 2fr 1fr 4fr;
+}
 
+/* #d4 .red {
+    grid-column: span 3;
+} */
 
-
+#d4 .blue {
+    grid-column: span 2;
+}
 
 
 /* 5. Minmax */
 /* 3 egyenlő részre felosztva */
 /* A középső legalább 200px legyen! */
-
+/* minmax(a, b): legalább a, legfeljebb b nagyság */
+#d5 .grid {
+    width: 80%;
+    grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
+}
 
 
 
