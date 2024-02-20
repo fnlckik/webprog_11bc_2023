@@ -6,8 +6,8 @@
 }
 
 .grid div {
-    height: 50px;
-    width: 80px;
+    /* height: 50px;
+    width: 80px; */
     border: 1px solid black;
     box-sizing: border-box;
     font-weight: bold;
@@ -53,13 +53,43 @@ hr {
     display: grid;
 }
 
+#d1 .grid {
+    grid-template-columns: 80px 110px 50px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+
+#d1 .red {
+    /* grid-row-start: 6;
+    grid-row-end: 7; */
+    grid-row: 6 / 7;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-column: 2 / 4;
+}
 
 
+#d1 .yellow {
+    /* grid-row: 1 / 6; */
+    grid-row: 1 / span 5;
+    grid-column: 4 / 5;
+}
+
+#d1 .green {
+    /* grid-row: 3 / 5;
+    grid-column: 1 / 4; */
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 3;
+}
 
 /* 2. Rövidítések (shorthand property) */
 /* Sorok: 50px */
 /* Oszlopok: 80px */
-
+#d2 .grid {
+    /* grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px; */
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 50px);
+}
 
 
 
