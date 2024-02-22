@@ -214,7 +214,15 @@ hr {
 /* Legalább 200px széles oszlopok */
 /* Flexibilis megjelenítés: annyi oszlop, ahány fér */
 /* 10px és 4px kihagyás */
-
+/* auto-fill: oszlopok számát dinamikusan változtatja ~ flex-wrap */
+/* auto-fit: hasonló + elemek szélességét is változtatja */
+#d6 .grid {
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 4px 10px; */
+    column-gap: 10px;
+    row-gap: 4px;
+}
 
 
 
@@ -224,6 +232,22 @@ hr {
 /* Oszlopok: 3db 30%-os */
 /* Belső div-ek mérete 50% mindkét irányban! */
 
+/* justify-content: rácsok igazítása (vizszintes) */
+/* start, center, end, space-between, space-around, space-evenly */
 
+/* justify-items: rácsok elemeinek igazítása (vizszintes) */
+/* start, center, end */
+#d7 .grid {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 25%);
+    justify-content: space-around;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
 
+#d7 .grid div {
+    width: 50%;
+    height: 50%;
+}
 
