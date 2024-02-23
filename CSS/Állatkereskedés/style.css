@@ -122,18 +122,65 @@ input[type="radio"], input[type="checkbox"] {
 /* ------------------------------------------------------------------- */
 
 /* Menü formázása + animáció */
+ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
 
+li {
+    display: flex;
+    flex-grow: 1;
+}
 
+a {
+    flex-grow: 1;
+    text-align: center;
+    text-shadow: 0 0 1px black;
+    /* background-color: yellow; */
+    transition: letter-spacing 0.5s;
+    animation: megjelenes 1s;
+}
+
+@keyframes megjelenes {
+    0% {
+        transform: scale(0);
+        text-shadow: 0 0 10px black;
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* li:first-child {
+    flex-grow: 7;
+    background-color: red;
+} */
 
 
 /* Menü linkek áttűnés */
+a:hover {
+    letter-spacing: 2px;
+    transition: letter-spacing 0.5s;
+}
+
+/* a:not(:hover) {
+    transition: letter-spacing 0.5s;
+} */
+
 
 
 
 
 /* ------------------------------------------------------------------- */
 /* Értékelés formázása */
-
+#ertekeles {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: minmax(100px, 1fr) 5fr 3fr;
+}
 
 
 
