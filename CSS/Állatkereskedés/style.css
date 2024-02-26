@@ -180,14 +180,71 @@ a:hover {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: minmax(100px, 1fr) 5fr 3fr;
+    gap: 1em;
+    align-items: center;
 }
 
+/* #ertekeles img {
+    grid-area: 1 / 1 / 4 / 2;
+    grid-row: 1 / 4;
+}
 
+#ertekeles h2 {
+    grid-area: 1 / 2 / 4 / 3;
+    grid-row: 1 / 4;
+} */
+
+#ertekeles img, #ertekeles h2 {
+    grid-row: span 3;
+    /* grid-row: 1 / -1; */
+}
+
+#csik {
+    position: relative;
+    background: linear-gradient(90deg, red, yellow, green);
+}
 
 /* Értékelés animáció */
+#csik::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    /* left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; */
+    inset: 0;
+    /* left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; */
+    animation: toltes 3s forwards;
+}
 
+/* MO2 */
+/* @keyframes toltes {
+    0% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 90%;
+        width: 10%;
+    }
+} */
 
-
+@keyframes toltes {
+    0% {
+        left: 0;
+        border-radius: 20px;
+    }
+    25%, 100% {
+        border-radius: 0 20px 20px 0;
+    }
+    100% {
+        left: 90%;
+    }
+}
 
 /* ------------------------------------------------------------------- */
 /* Kategóriák formázása + áttűnés */
