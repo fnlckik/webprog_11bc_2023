@@ -223,6 +223,20 @@ hr {
 /* Oszlopok: 3db 30%-os */
 /* Belső div-ek mérete 50% mindkét irányban! */
 
+/* justify - vízszintes, align - függőleges */
+/* content: rácsok igazítása */
+/* items: benne lévő elemek */
+#d7 .grid {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 25%);
+    justify-content: space-around;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
 
-
+#d7 .grid div {
+    width: 50%;
+    height: 50%;
+}
 
