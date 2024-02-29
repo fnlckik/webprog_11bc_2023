@@ -132,7 +132,7 @@ li {
     flex-grow: 1;
 }
 
-a {
+nav a {
     flex-grow: 1;
     text-align: center;
     text-shadow: 0 0 1px black;
@@ -248,15 +248,47 @@ a:hover {
 
 /* ------------------------------------------------------------------- */
 /* Kategóriák formázása + áttűnés */
+/* section:nth-of-type(2) > div */
+/* justify-content: rács igazítása */
+/* justify-items: elemek igazítása (a rácsokon belül) */
+div:has(.kategoria) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* column-gap: 0.5em;
+    row-gap: 1em; */
+    gap: 1em 0.5em;
+    justify-items: center;
+}
 
+.kategoria {
+    height: 280px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: border-radius 0.25s;
+    overflow: hidden;
+}
 
+.kategoria:hover {
+    border-radius: 50%;
+    border-style: solid;
+}
 
 
 /* ------------------------------------------------------------------- */
 /* Űrlap formázása */
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    align-items: center;
+}
 
-
-
+/* 1 / -1 => elsőtől az utolsóig, egy oszlop szélességnyi */
+.szeles {
+    grid-column: 1 / -1;
+}
 
 /* ------------------------------------------------------------------- */
 /* Űrlap animáció */
