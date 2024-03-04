@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body {
+    padding: 1em;
+}
+
+header {
+    background-color: rgba(0, 150, 0, 0.1);
+}
+
+header img {
+    width: 150px;
+    max-width: 30%;
+}
+
+#pillanat img {
+    width: 200px;
+}
+
+header + div {
+    padding: 1em 0;
+    background-color: lightgoldenrodyellow;
+    overflow: hidden;
+}
+
+#szallitas {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.5em;
+}
+
+#belepes {
+    background-color: rgba(0, 48, 0, 0.05);
+    padding: 1em;
+}
+
+#belepes label, #belepes input {
+    font-size: 1.4em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+#belepes img {
+    display: block;
+    margin: auto;
+}
+
+#pillanat {
+    background-color: rgba(0, 0, 130, 0.1);
+    padding: 2em;
+    min-height: 300px;
+}
+
+#pillanat p:last-of-type {
+    width: 300px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+#pillanat p:first-of-type {
+    font-size: 2em;
+    text-align: center;
+}
+
+input, label {
+    width: 100%;
+}
+
+label span {
+    display: inline-block;
+}
+
+div:has(span.kancso):hover, div:has(span.kancso):hover * {
+    cursor: pointer;
+}
+
+#pillanat img {
+    box-shadow: 0 0 10px black;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+footer span {
+    float: left;
+    margin-right: 0.25em;
+}
+
+footer div {
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------- */
+
+/* Fejléc */
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* Szállítás animáció */
+#szallitas {
+    animation: mozgas 8s infinite;
+}
+
+@keyframes mozgas {
+    0%, 5% {
+        transform: translateX(-100%);
+    }
+    30%, 70% {
+        transform: translateX(0);
+    }
+    95%, 100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* Belépés grid */
+#belepes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    align-items: center;
+}
+
+#belepes img {
+    /* grid-area: 1 / 2 / 3 / 3; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+@media (max-width: 460px) {
+    #belepes {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        justify-items: center;
+    }
+
+    #belepes img {
+        /* grid-row: 3 / 4;
+        grid-column: 1 / 2; */
+        /* grid-row: unset;
+        grid-column: unset; */
+        /* grid-area: 3 / 1 / 4 / 2; */
+        grid-area: unset;
+    }
+}
+
+
+
+
+
+/* Pillanat varázsa */
+#pillanat {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* #pillanat img, #pillanat p {
+    flex-grow: 1;
+} */
+
+#pillanat > * {
+    flex-grow: 1;
+}
+
+/* Kancsó animáció */
+#belepes div .kancso {
+    transition: transform 1s;
+}
+
+#belepes div:hover .kancso {
+    transform: rotate(-90deg);
+}
+
+
+
+/* Pillanat kép animáció */
+#pillanat img {
+    animation: megjelenes 1s;
+}
+
+@keyframes megjelenes {
+    0%, 25% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* Footer */
+footer {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
+/* Bonusz!!! */
+
+
+
