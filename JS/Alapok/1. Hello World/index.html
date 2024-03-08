@@ -45,8 +45,17 @@
         */
         
         console.log("Hali világ!");
-        // console.log(nev);
-        // console.log("Hali világ!");
+        
+        nev = prompt("Mi a neved?");
+        console.log("1. Szia " + nev + "!");
+        // console.log("2. Szia", nev, "!");
+        console.log('2. Szia ' + nev + '!');
+
+        // Template literal: sablon érték
+        console.log(`3. Szia ${nev}!`);
+
+        nev = 5;
+        console.log(nev+2);
     </script>
 </body>
 </html>
