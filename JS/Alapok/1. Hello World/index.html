@@ -15,6 +15,8 @@
         */
         // Történelem:
         /*
+            1972, 1985 - C, C++
+
             1991 - Python
 
             1995 May - Java--------------|
@@ -30,7 +32,32 @@
             2000 - C#
         */
 
+        // JavaScript jellemzők:
+        /*
+            0. Case sensitive (kisbetűt, nagybetűt megkülönböztet)
+            1. Interpretált (JS engine) (python)
+                - Ellentettje: fordított (C#)
+            2. Imperatív (utasítás orientált) (python, C#)
+                - Ellentettje: deklaratív (MySQL)
+            3. Dinamikusan típusos (python)
+               "Az értéknek van típusa, nem a változónak!"
+                - Ellentettje: statikusan típusos (C#)
+            4. Objektumorientált (?)
+            5. Eseményvezérelt (?)
+        */
+        
         console.log("Hali Világ!");
+        
+        nev = prompt("Mi a neved?");
+        console.log("1. Szia " + nev + "!");
+        console.log('2. Szia ' + nev + '!');
+        // console.log('3. Szia', nev ,'!');
+
+        // Template literal
+        console.log(`3. Szia ${nev}!`);
+        
+        nev = 5;
+        console.log(nev+2);
     </script>
 </body>
 </html>
