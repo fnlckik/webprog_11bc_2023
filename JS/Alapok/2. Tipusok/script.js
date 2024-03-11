@@ -40,3 +40,8 @@ console.log("5. Null:", typeof(null));
 // 6. NaN - Not a Number
 // 0 / 0, Infinity - Infinity, 0 * Infinity
 console.log("6. NaN:", typeof(0 / 0));
+
+// Változók deklarálása
+let a = 5;
+let b = 7;
+let c;
