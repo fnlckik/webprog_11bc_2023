@@ -51,3 +51,44 @@ console.log(5 != 7);
 // C#: error
 // Ebből még baj lehet...
 console.log(2 == "2");
+console.clear();
+
+// Erről beszélek...
+// Az == operátor nem tranzitív!
+// Matek: a=b és b=c => a=c
+console.log("" == 0);
+console.log("0" == 0);
+console.log("" == "0");
+console.clear();
+
+// Új operátor:
+// === stricty equal (szigorú egyenlőség)
+// Igaz ha: típus ÉS érték is egyezik!
+console.log("0" === 0);
+console.log("0" !== 0);
+console.clear();
+
+// Még így gond lehet:
+console.log(NaN == NaN);
+
+// NaN vizsgálat
+// isNaN: visszatérési értéke, hogy paramétere NaN-e?
+console.log(isNaN(NaN));
+console.clear();
+
+// -------------------------------
+// Logikai
+// ! - nem
+// && - és
+// || - vagy
+console.log(false || 1 < 2 && 5 !== "5");
+
+// Kitekintés:
+// Vigyázat: a < b < c jelentése (a < b) < c
+console.log(1 < 3 < 5);
+console.log(4 < 5 < 2);
+
+// Összefoglaló:
+// .toFixed(n), parseInt(n), parseFloat(n)
+// ===, !==
+// isNaN(n)
