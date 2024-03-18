@@ -11,8 +11,11 @@ function atlag(a, b) {
 
 
 // 2. Ciklusok, láthatóság (var, let)
-
-
+console.log("Szamok 1-tol 5-ig:");
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+// console.log(i);
 
 
 // 3. If, "truthy, falsy"
@@ -23,7 +26,7 @@ if (1 < 2) {
 } else {
     console.log("Hamis!");
 }
-
+console.clear();
 
 
 // ---------------------------------------
@@ -31,13 +34,27 @@ if (1 < 2) {
 // 4. Készíts duplazoFelezo(n) nevű függvényt, ami:
 // páros számok felét,
 // páratlanok dupláját adja vissza!
-
+function duplazoFelezo(n) {
+    if (n % 2 === 0) {
+        return n / 2;
+    } else {
+        return n * 2;
+    }
+}
 
 
 
 // 5. Készíts osztokSzama(n) nevű függvény, amely:
 // megadja, hogy hány pozitív osztója van n-nek!
-
+function osztokSzama(n) {
+    let db = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            db++;
+        }
+    }
+    return db;
+}
 
 
 
@@ -46,7 +63,15 @@ if (1 < 2) {
 // Visszatérési értéke pontosan akkor igaz
 // ha prímszám a paraméter!
 // Csak 1-nél nagyobb egész számok lehetnek prímek!
-
+function primE(p) {
+    db = osztokSzama(p);
+    if (db === 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+// Gond: nem hatékony!
 
 
 
