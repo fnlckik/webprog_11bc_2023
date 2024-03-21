@@ -63,13 +63,22 @@ function osztokSzama(n) {
 // Visszatérési értéke pontosan akkor igaz
 // ha prímszám a paraméter!
 // Csak 1-nél nagyobb egész számok lehetnek prímek!
+// Early return technika (szélsőséges esetek kezelése először + visszatérés)
+// Kakuk Ákos: p % 1 !== 0
 function primE(p) {
-    db = osztokSzama(p);
-    if (db === 2) {
-        return true;
-    } else {
+    if (p < 2 || parseInt(p) !== p) {
         return false;
     }
+    let i = 2;
+    while (i < p && !(p % i === 0)) {
+        i++;
+    }
+    return i >= p;
+    // if (i < p) {
+    //     return false;
+    // } else {
+    //     return true;
+    // }
 }
 // Gond: nem hatékony!
 
@@ -83,6 +92,14 @@ function primE(p) {
 // ha 2-vel és 3-mal is osztható akkor "X",
 // minden egyéb esetben pedig "-" legyen a neki megfelelő karakter!
 // Pl.: szoveg(12, 20) === "X-232-X-2"
-
+function szoveg(a, b) {
+    let szo = "";
+    for (let i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+            szo += "2";
+        }
+    }
+    return szo;
+}
 
 
