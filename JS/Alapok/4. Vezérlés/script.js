@@ -41,14 +41,54 @@ console.clear();
 // 4. Készíts duplazoFelezo(n) nevű függvényt, ami:
 // páros számok felét,
 // páratlanok dupláját adja vissza!
-
-
-
+function duplazoFelezo(n) {
+    if (n % 2 === 0) {
+        return n / 2;
+    } else {
+        return n * 2;
+    }
+}
 
 // 5. Készíts osztokSzama(n) nevű függvény, amely:
 // megadja, hogy hány pozitív osztója van n-nek!
+function osztokSzama(n) {
+    let db = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            db++;
+        }
+    }
+    return db;
+}
 
+function osztokSzamaJav(n) {
+    let alapok = [];
+    let kitevok = [];
+    let oszto = 2;
+    let kitevo = 0;
+    while (n !== 1) {
+        if (n % oszto === 0) {
+            n = n / oszto;
+            kitevo++;
+        } else {
+            alapok.push(oszto);
+            kitevok.push(kitevo);
+            kitevo = 0;
+            oszto++;
+        }
+    }
+    alapok.push(oszto);
+    kitevok.push(kitevo);
 
+    // Matek:
+    // Prímtényezős felbontásból osztók száma:
+    // Kitevőkhöz hozzáadunk egyet és összeszorozzuk
+    let szorzat = 1;
+    for (let i = 0; i < kitevok.length; i++) {
+        szorzat *= kitevok[i] + 1;
+    }
+    return szorzat;
+}
 
 
 // 6. Készíts primE(p) nevű függvényt, amely
@@ -56,8 +96,22 @@ console.clear();
 // Visszatérési értéke pontosan akkor igaz
 // ha prímszám a paraméter!
 // Csak 1-nél nagyobb egész számok lehetnek prímek!
+function primE(p) {
+    return osztokSzamaJav(p) === 2;
+}
 
-
+function primE(p) {
+    let i = 2;
+    while (i < p && !(p % i === 0)) {
+        i++;
+    }
+    return !(i < p);
+    // if (i < p) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+}
 
 
 // 7. Készíts szoveg(a, b) néven függvényt, amely
