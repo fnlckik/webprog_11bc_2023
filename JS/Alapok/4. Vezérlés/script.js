@@ -95,11 +95,18 @@ function primE(p) {
 function szoveg(a, b) {
     let szo = "";
     for (let i = a; i <= b; i++) {
-        if (i % 2 === 0) {
+        if (i % 2 === 0 && i % 3 === 0) {
+            szo += "X";
+        } else if (i % 2 === 0) {
             szo += "2";
+        } else if (i % 3 === 0) {
+            szo += "3";
+        } else {
+            szo += "-";
         }
     }
     return szo;
 }
+
 
 
